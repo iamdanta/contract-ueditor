@@ -7,11 +7,6 @@
   background: 0 0/100% 100% no-repeat;
 }
 
-body, html{
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
 // 常用布局排版
 .full {
   width: 100%;
@@ -162,19 +157,7 @@ ul.list-unstyled {
 .transition-default {
   transition: $transition-base;
 }
-//按钮颜色
-.btnColor {
-  background-color: #FFBC5D;
-  color: white;
-}
-.greens {
-  float: right;
-  margin-right: -20px;
-  margin-top: 14px;
-}
-.blue {
-  background-color: #56BEFA;
-}
+
 // 常用 margin 距离
 // 基准单位 => base: 10px | medium: 20px | large: 30px
 // class => .margin-base = { margin: 10px } （medium | large 同理）

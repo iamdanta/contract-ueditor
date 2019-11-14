@@ -1,28 +1,13 @@
 <template>
-  <div id="app" class="full flex">
-    <navBar></Navbar>
-    <mainBody class="flex-1"></mainBody>
+  <div id="app" class="full-height">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-    import navBar from "./layout/navbar";
-    import mainBody from "./layout/mainBody";
-
-    export default {
-        name: 'app',
-        data() {
-            return {
-            }
-        },
-        components: {navBar, mainBody}
-    }
+export default {
+  name: 'app'
+};
 </script>
 
-<style scoped lang="scss">
-  .navBar {
-    width: 300px;
-    border-right: 1px solid red;
-  }
-</style>
+<style lang="scss" scoped></style>
