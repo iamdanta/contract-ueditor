@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app full">
+    <div>
+      <h2></h2>
+    </div>
+    <div>
+      <el-table :data="tableData" border style="width: 100%">
+        <el-table-column prop="id" label="合同id"></el-table-column>
+        <el-table-column prop="name" label="合同名称"></el-table-column>
+        <el-table-column prop="createTime" label="合同创建时间"></el-table-column>
+      </el-table>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'app',
+        data() {
+            return {
+                tableData: [{
+                    id: 1,
+                    name: '测试合同',
+                    time: '2019.11.14'
+                }]
+            }
+        },
+        components: {}
+    }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

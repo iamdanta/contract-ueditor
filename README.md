@@ -1,29 +1,6 @@
-# contract-ueditor
+# contractEditor 一套基于vue和UEditor的合同模板编辑器
 
-## Project setup
+### 项目简介
 ```
-npm install
+本项目是一个基于vue和百度开源编辑器UEditor制作的合同模板编辑器，用于不动产项目合同开发
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
