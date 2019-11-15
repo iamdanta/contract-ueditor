@@ -12,10 +12,9 @@ import Layout from '../layout';
 
 // 主区子路由
 import dashboardRoute from './modules/dashboard'; // 主界面
-import employeesManagement from './modules/employees-management';
 
 // 子模块的路由注册
-export const subRoutes = [dashboardRoute, employeesManagement];
+export const subRoutes = [dashboardRoute];
 
 // 路由集合
 const routes = [

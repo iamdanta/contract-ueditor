@@ -84,5 +84,6 @@ export default {
 @import '~@/styles/mixins.scss';
 
 .history-record {
+  background-color: #fff;
 }
 </style>

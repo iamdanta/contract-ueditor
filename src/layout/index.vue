@@ -36,6 +36,7 @@ export default {
 .layout {
   // 头部导航高度 = $header-height，padding-top 是让 layout-body 能够高度 100%
   padding-top: $header-height;
+  background-color: #f9f9f9;
 
   .header {
     margin-top: -$header-height;
@@ -50,5 +51,6 @@ export default {
 .main-view {
   border: $border-base;
   overflow: hidden;
+  background-color: #fff;
 }
 </style>

@@ -71,7 +71,7 @@ export default {
   margin-top: -$header-height;
   padding: 0 10px;
   background: #fff;
-  color: white;
+  color: #999;
 
   .logo-image {
     height: 60px;

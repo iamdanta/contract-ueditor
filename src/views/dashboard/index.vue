@@ -1,5 +1,5 @@
 <template>
-  <h3>313123141412313</h3>
+  <h3>我是主界面</h3>
 </template>
 
 <script>
