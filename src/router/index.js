@@ -12,9 +12,10 @@ import Layout from '../layout';
 
 // 主区子路由
 import dashboardRoute from './modules/dashboard'; // 主界面
+import contractRoute from './modules/contract';
 
 // 子模块的路由注册
-export const subRoutes = [dashboardRoute];
+export const subRoutes = [dashboardRoute, contractRoute];
 
 // 路由集合
 const routes = [

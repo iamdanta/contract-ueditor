@@ -9,6 +9,7 @@ import './plugins/element.js';
 
 // 样式
 import './styles/index.scss';
+import './styles/UEStyle.scss';
 
 // 开发环境配置（如果需要就去掉注释）
 // if (process.env.NODE_ENV === 'development') {

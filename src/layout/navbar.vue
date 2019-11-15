@@ -12,9 +12,9 @@
       :collapse="isCollapse"
       :router="true"
       :default-active="activePath"
-      background-color="#303a4a"
-      text-color="white"
-      active-text-color="#ffd04b"
+      background-color="#fff"
+      text-color="#999"
+      active-text-color="#27B88D"
     >
       <span class="menu-wrap" v-for="menu in menus" :key="menu.path">
         <el-submenu v-if="menu.children" :index="menu.path">
@@ -107,7 +107,7 @@ export default {
     padding: 0 22px;
     cursor: pointer;
     color: white;
-    background: rgb(45, 52, 66);
+    background: #27B88D;
     border-right: $border-base;
   }
 

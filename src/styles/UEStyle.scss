@@ -1,0 +1,602 @@
+//本样式为合同模板样式
+.contractEditorDialog {
+  height: 100%;
+
+  .el-dialog__body {
+    height: calc(100% - 54px);
+    padding: 15px 20px;
+  }
+
+  .contractEditorRow {
+    overflow: hidden;
+
+    .leftBar {
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      overflow: auto;
+
+      .leftBarAuthor {
+        h2 {
+          margin: 20px 0 20px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          li {
+            transition: all .5s;
+            height: 30px;
+            background-color: rgb(82, 86, 89);
+            margin: 10px 0;
+            list-style: none;
+            line-height: 30px;
+            padding: 0 10px;
+            border-radius: 5px;
+            color: #fff;
+
+            .el-row {
+              height: 100%;
+              width: 100%;
+
+              .el-col {
+                height: 100%;
+                line-height: 30px;
+              }
+
+              .anchorLink {
+                span {
+                  background-color: #fff;
+                  color: #666;
+                  padding: 0 10px;
+                  margin-right: 10px;
+                  border-radius: 5px;
+                }
+              }
+
+              .goAnchorLink {
+                cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+
+              .authorDelete {
+                text-align: right;
+
+                i {
+                  cursor: pointer;
+                  opacity: 0;
+                  transition: .5s opacity;
+                }
+              }
+
+              &:hover {
+                i {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .centerBar {
+      .UEditorBody {
+        height: 100% !important;
+
+        > div:nth-child(1) {
+          height: 100% !important;
+        }
+      }
+
+      .edui-default .edui-editor {
+        //border: 0 !important;
+      }
+
+      .edui-state-hover {
+        .edui-button-wrap {
+          background-color: transparent !important;
+        }
+      }
+
+      .edui-editor {
+        height: 100% !important;
+        background-color: #d7d7d7 !important;
+
+        .edui-editor-toolbarboxouter {
+          background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+          border: none;
+        }
+
+        .edui-editor-iframeholder {
+          height: calc(100% - 100px) !important;
+          width: 660px !important;
+          margin: 30px auto;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+          padding: 30px 60px 30px;
+
+          iframe {
+            i, em {
+              background-color: #ccc;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .edui-editor-bottomContainer {
+          background-color: #fff !important;
+        }
+      }
+
+      //新增按钮
+      .inputBtn {
+        background: url('../assets/images/contract-management/input.png') center no-repeat;
+        background-size: 80%;
+        width: 100px;
+        margin-right: 5px;
+
+        .edui-box.edui-icon {
+          background-image: none;
+        }
+      }
+
+      .selectBtn {
+        background: url('../assets/images/contract-management/select.png') center no-repeat;
+        background-size: 80%;
+        width: 110px;
+        margin-right: 5px;
+
+        .edui-box.edui-icon {
+          background-image: none;
+        }
+      }
+
+      .textareaBtn {
+        background: url('../assets/images/contract-management/textarea.png') center no-repeat;
+        background-size: 80%;
+        width: 130px;
+        margin-right: 5px;
+
+        .edui-box.edui-icon {
+          background-image: none;
+        }
+      }
+
+      //出卖人
+      .crrListBtn {
+        background: url('../assets/images/contract-management/出卖人列表.png') center no-repeat;
+        background-size: 80%;
+        width: 120px;
+        margin-right: 5px;
+
+        .edui-box.edui-icon {
+          background-image: none;
+        }
+      }
+
+      //买受人
+      .msrListBtn {
+        background: url('../assets/images/contract-management/买受人列表.png') center no-repeat;
+        background-size: 80%;
+        width: 120px;
+        margin-right: 5px;
+
+        .edui-box.edui-icon {
+          background-image: none;
+        }
+      }
+    }
+
+    .rightBar {
+      height: 100%;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      overflow: auto;
+      padding-bottom: 20px;
+
+      h2 {
+        margin: 20px 0 20px;
+      }
+
+      li {
+        line-height: 20px;
+        margin: 20px 20px;
+      }
+
+      .el-input-number {
+        width: 100%;
+      }
+
+      .selectOptionAdd {
+        .el-input {
+          margin-right: 10px;
+        }
+
+        .el-button {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        //display: flex;
+      }
+
+      .drawerTips {
+        margin: 20px 0;
+
+        i {
+          color: red
+        }
+
+        span {
+          color: red;
+          font-weight: bold;
+        }
+      }
+
+      .selectOptionList {
+        padding: 5px;
+        border: 1px solid #d4d4d4;
+        height: 90px;
+        overflow: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 4px;
+
+        p {
+          min-width: 30px;
+          height: 20px;
+          margin: 5px 5px;
+          padding: 4px;
+          border-radius: 4px;
+          background-color: #ccc;
+
+          i {
+            color: red;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .drawer-footer {
+        text-align: center;
+      }
+
+      //多重验证选择框
+      .el-tag.el-tag--info {
+        color: red;
+        font-weight: bold;
+      }
+
+      //随机绑定框
+      .el-switch__label.is-active {
+        color: red;
+        font-weight: bold;
+      }
+
+      //随机字段的过渡动画
+      .randomValueInput {
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .contractEditorFooter {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    .contractEditorFooterForm {
+      line-height: 40px;
+
+      .el-form-item {
+        margin-right: 0;
+
+        .el-form-item__error {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+//预览框样式
+.contractPreviewDialog, .contractPreviewDialog {
+  .el-dialog__body {
+    height: calc(100% - 54px);
+    padding: 15px 20px;
+
+    .backBtn {
+      position: absolute;
+      top: 3px;
+      right: 10px;
+    }
+  }
+}
+
+//预览主体样式
+.contractPreview {
+  .preview-left {
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+
+    h2 {
+      margin: 20px 0 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      li {
+        transition: all .5s;
+        height: 30px;
+        background-color: rgb(82, 86, 89);
+        margin: 10px 0;
+        list-style: none;
+        line-height: 30px;
+        padding: 0 10px;
+        border-radius: 5px;
+        color: #fff;
+
+        .el-row {
+          height: 100%;
+          width: 100%;
+
+          .el-col {
+            height: 100%;
+            line-height: 30px;
+          }
+
+          .anchorLink {
+            span {
+              background-color: #fff;
+              color: #666;
+              padding: 0 10px;
+              margin-right: 10px;
+              border-radius: 5px;
+            }
+          }
+
+          .goAnchorLink {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .preview-center {
+    .center-form {
+      background-color: #d7d7d7 !important;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+
+      .previewMain {
+        height: calc(100% - 60px);
+        width: 660px !important;
+        margin: 30px auto;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+        padding: 30px 60px 30px;
+        overflow: auto;
+
+        .previewInputSpan, .previewSelectSpan {
+          display: inline-block;
+          border-bottom: 1px solid #ccc;
+          vertical-align: middle;
+          line-height: 1;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .preview-right {
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+
+    .preview-right-tips {
+      .printBtn {
+        margin: 10px 0 30px;
+      }
+
+      li {
+        line-height: 20px;
+        margin: 20px 20px;
+      }
+    }
+  }
+}
+
+//编辑主体样式
+.contractEdit {
+  .edit-left {
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+
+    h2 {
+      margin: 20px 0 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      li {
+        transition: all .5s;
+        height: 30px;
+        background-color: rgb(82, 86, 89);
+        margin: 10px 0;
+        list-style: none;
+        line-height: 30px;
+        padding: 0 10px;
+        border-radius: 5px;
+        color: #fff;
+
+        .el-row {
+          height: 100%;
+          width: 100%;
+
+          .el-col {
+            height: 100%;
+            line-height: 30px;
+          }
+
+          .anchorLink {
+            span {
+              background-color: #fff;
+              color: #666;
+              padding: 0 10px;
+              margin-right: 10px;
+              border-radius: 5px;
+            }
+          }
+
+          .goAnchorLink {
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .edit-center {
+    .center-form {
+      background-color: #d7d7d7 !important;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+
+      .editMain {
+        height: calc(100% - 60px);
+        width: 660px !important;
+        margin: 30px auto;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+        padding: 30px 60px 30px;
+        overflow: auto;
+      }
+    }
+
+    //保存按钮
+    .editSaveBtn {
+      position: absolute;
+      top: 15px;
+      right: 9%;
+    }
+  }
+
+  .edit-right {
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+  }
+}
+
+//编辑状态填数据模板
+.templateForm {
+  //通用外部样式
+  .el-form-item {
+    display: inline-block;
+    margin-bottom: 0;
+
+    div, input {
+      height: 100%;
+
+      .el-input__inner {
+        padding: 0;
+      }
+
+      .el-form-item__content {
+        line-height: 1;
+      }
+    }
+  }
+
+  input {
+    //outline: 0;
+    //margin: 0;
+    //background: none;
+    //padding: 0;
+    //box-shadow: none;
+    //border-width: 0 0 2px;
+    ////border-color: #929292;
+    //border-color: red;
+  }
+
+  p {
+    font-family: none;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+  }
+
+  .viewObiList {
+    font-family: none;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+  }
+
+  .previewTextarea {
+    border: 1px solid #ccc;
+  }
+
+  //下拉框
+  .el-input__suffix {
+    height: auto;
+  }
+
+  //时间框
+  .el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 100%;
+  }
+
+  //权利人区域
+  .contractQlrList {
+    overflow: auto;
+
+    .contractQlrListBody {
+      min-height: 100px;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: hidden;
+
+      .deleteListBtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        font-size: 18px;
+        color: red;
+        cursor: pointer;
+        transition: opacity .3s;
+      }
+
+      &:hover {
+        .deleteListBtn {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
