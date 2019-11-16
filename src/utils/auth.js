@@ -42,4 +42,6 @@ class Auth {
 }
 
 // 用户 token
-export const userAuth = new Auth('USER_AUTH_TOKEN');
+export const userAuth = new Auth('DanTa_USER_AUTH_TOKEN');
+export const App = new Auth('DanTa_APP_INFO');
+export const Dic = new Auth('DanTa_DIC');

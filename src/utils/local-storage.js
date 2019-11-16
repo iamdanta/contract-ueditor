@@ -25,3 +25,11 @@ export function getLocalData(name) {
 export function setLocalData(name, data) {
   localStorage.setItem(name, JSON.stringify(data));
 }
+
+/**
+ * 清理 localStorage 数据
+ * @param {string} name localStorage 名称
+ */
+export function clearLocalData(name) {
+  localStorage.removeItem(name);
+}

@@ -112,7 +112,6 @@
           this.isEditContract = false;
           //弹框显示
           this.editorDialogVisible = visible;
-          this.$emit('getList');
         };
         if (!visible && data === '关闭弹框') {
           cleanEditor();

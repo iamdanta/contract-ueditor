@@ -11,6 +11,8 @@ import './plugins/element.js';
 import './styles/index.scss';
 import './styles/UEStyle.scss';
 
+import '@/components'
+
 // 开发环境配置（如果需要就去掉注释）
 // if (process.env.NODE_ENV === 'development') {
 //   // mock 服务
