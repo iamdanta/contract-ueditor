@@ -264,7 +264,6 @@
     },
     created() {
       //处理字典
-      console.log(Dic.getToken());
       this.AllDicInfo = Dic.getToken().dic;
       for (let i = 0; i < this.AllDicInfo.length; i++) {
         this.selectDicOptionList.push({

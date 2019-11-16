@@ -41,6 +41,7 @@
       App.setToken(appData);
     },
     methods: {
+      //设置local过期时间
       setUserLocal() {
         const now = new Date();
         const dateTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
