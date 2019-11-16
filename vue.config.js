@@ -22,7 +22,12 @@ module.exports = {
 
   // webpack config
   configureWebpack: {
-    plugins: [...BundleAnalyzerPlugin]
+    plugins: [...BundleAnalyzerPlugin],
+    resolve: {
+      alias: {
+        vue$: 'vue/dist/vue.esm.js'
+      }
+    }
   },
 
   // node_modules 中需要编译的库

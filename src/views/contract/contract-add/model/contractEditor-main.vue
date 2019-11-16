@@ -548,7 +548,14 @@
             return false;
           }
           if (valid && this.contractModelSaved) {
-
+            this.$emit('saveContract', {
+              mbmc: this.contractModelData.modelName,
+              mblx: this.contractModelData.modelType,
+              createPeople: 'wupeng',
+              createTime: '2019.11',
+              tk: this.UEditorInitMsg,
+              zstk: this.editorInstance.getAllHtml().replace(/[\r\n]/g, "")
+            })
           } else {
             this.$message.warning('请输入合同模板基本信息！');
           }
