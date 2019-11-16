@@ -12,44 +12,41 @@
     data() {
       return {};
     },
+    created() {
+      if (this.$router.path !== '/home') {
+        this.$router.replace('/home')
+      }
+    },
     mounted() {
-      userAuth.setToken({
+      const expires = this.setUserLocal();
+      // 设置过期时间
+      //执行存local
+      let userData = {
         userName: 'DanTa',
         realName: 'wupeng'
-      });
-      Dic.setToken({
-        dic: [{
-          label: '是否',
-          value: '1',
-          childrens: [{
-            label: '是',
-            value: '1',
-          }, {
-            label: '否',
-            value: '0',
-          }]
-        }, {
-          label: '颜色',
-          value: '1',
-          childrens: [{
-            label: '红',
-            value: '0',
-          }, {
-            label: '橙',
-            value: '1',
-          }, {
-            label: '黄',
-            value: '2',
-          }]
-        }],
+      };
+      let dicData = {
+        dic: require('../public/dic.json').data,
         name: '字典'
-      });
-      App.setToken({
+      };
+      let appData = {
         appName: 'test',
         appCreatePeople: 'DanTa'
-      });
+      };
+      userData.expires = expires;
+      dicData.expires = expires;
+      appData.expires = expires;
+      userAuth.setToken(userData);
+      Dic.setToken(dicData);
+      App.setToken(appData);
     },
-    methods: {}
+    methods: {
+      setUserLocal() {
+        const now = new Date();
+        const dateTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+        return dateTime.getTime();
+      }
+    }
   };
 </script>
 

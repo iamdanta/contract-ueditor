@@ -203,7 +203,7 @@
 </template>
 
 <script>
-  import validator from '@/utils/validate.js';
+  import validator from '@/utils/validate';
   import {Dic} from '@/utils/auth';
 
   export default {
@@ -269,7 +269,7 @@
       for (let i = 0; i < this.AllDicInfo.length; i++) {
         this.selectDicOptionList.push({
           label: this.AllDicInfo[i].label
-        })
+        });
       }
     },
     methods: {

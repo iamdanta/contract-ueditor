@@ -1,0 +1,3546 @@
+{
+  "success": true,
+  "message": null,
+  "data": [
+    {
+      "id": "013b988cf76f4671b1ab41bf1a394133",
+      "childrens": [
+        {
+          "id": "34c6f839ef0d455dae58a7c2aa90fe6f",
+          "childrens": null,
+          "pid": "013b988cf76f4671b1ab41bf1a394133",
+          "pids": "013b988cf76f4671b1ab41bf1a394133,",
+          "value": "0",
+          "label": "否",
+          "type": "是否",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "601317c756eb4eceb63fa45506ebef83",
+          "childrens": null,
+          "pid": "013b988cf76f4671b1ab41bf1a394133",
+          "pids": "013b988cf76f4671b1ab41bf1a394133,",
+          "value": "1",
+          "label": "是",
+          "type": "是否",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "1",
+      "label": "是否",
+      "type": "是否",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "78109b6f0c464f65afac5f9fb0c0a3b0",
+      "childrens": [
+        {
+          "id": "f55346be229240e9a2f574e9c33270b5",
+          "childrens": null,
+          "pid": "78109b6f0c464f65afac5f9fb0c0a3b0",
+          "pids": "78109b6f0c464f65afac5f9fb0c0a3b0,",
+          "value": "0",
+          "label": "空",
+          "type": "公共部位",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "ec80b4743df34eeba4115e15275429a2",
+          "childrens": null,
+          "pid": "78109b6f0c464f65afac5f9fb0c0a3b0",
+          "pids": "78109b6f0c464f65afac5f9fb0c0a3b0,",
+          "value": "1",
+          "label": "法定共有",
+          "type": "公共部位",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2a42953654b0417bb8a5190cd5d4aea8",
+          "childrens": null,
+          "pid": "78109b6f0c464f65afac5f9fb0c0a3b0",
+          "pids": "78109b6f0c464f65afac5f9fb0c0a3b0,",
+          "value": "2",
+          "label": "约定共有",
+          "type": "公共部位",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "56",
+      "label": "公共部位",
+      "type": "公共部位",
+      "description": "GGBW",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "4a49e6ebae5e4561b9c2b3d3f1104b38",
+      "childrens": [
+        {
+          "id": "79b889e4a65945aebd4131ac355599f3",
+          "childrens": null,
+          "pid": "4a49e6ebae5e4561b9c2b3d3f1104b38",
+          "pids": "4a49e6ebae5e4561b9c2b3d3f1104b38,",
+          "value": "2",
+          "label": "项目内多幢",
+          "type": "房屋类别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c2d489626c224066b99bac86772ba605",
+          "childrens": null,
+          "pid": "4a49e6ebae5e4561b9c2b3d3f1104b38",
+          "pids": "4a49e6ebae5e4561b9c2b3d3f1104b38,",
+          "value": "3",
+          "label": "公共部位",
+          "type": "房屋类别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "a82958ce6df34a8095af4eb72edf1bea",
+          "childrens": null,
+          "pid": "4a49e6ebae5e4561b9c2b3d3f1104b38",
+          "pids": "4a49e6ebae5e4561b9c2b3d3f1104b38,",
+          "value": "1",
+          "label": "普通房屋",
+          "type": "房屋类别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "57",
+      "label": "房屋类别",
+      "type": "房屋类别",
+      "description": "FWLB",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "25416e13214c42838185b9880786b5da",
+      "childrens": [
+        {
+          "id": "4809cb3b3c434eadac9a695a0ea60ab8",
+          "childrens": null,
+          "pid": "25416e13214c42838185b9880786b5da",
+          "pids": "25416e13214c42838185b9880786b5da,",
+          "value": "1",
+          "label": "出让人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "b98aa9e7bf6848beaedfb17d8cde00bd",
+          "childrens": null,
+          "pid": "25416e13214c42838185b9880786b5da",
+          "pids": "25416e13214c42838185b9880786b5da,",
+          "value": "2",
+          "label": "转让人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "9cd2eb5c99d44c17bc8898c1c26f4620",
+          "childrens": null,
+          "pid": "25416e13214c42838185b9880786b5da",
+          "pids": "25416e13214c42838185b9880786b5da,",
+          "value": "3",
+          "label": "所有权人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "59",
+      "label": "权利人分类",
+      "type": "权利人分类",
+      "description": "QLRLX",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+      "childrens": [
+        {
+          "id": "661246ece47c40569187efc1834b2078",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "1",
+          "label": "原所有权人",
+          "type": "权利人分类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2bb229c9a350497bae10728db52681d4",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "0",
+          "label": "所有权人",
+          "type": "权利人分类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "bf68ee5a8a764c9e911c4eaa0d2d1324",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "2",
+          "label": "使用人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2ea7c0f53aac4910b8162b84d8b13616",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "3",
+          "label": "原使用人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "7a83df27af0042a995b7a7fc2a22dbd6",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "4",
+          "label": "抵押权人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "28e44ab2346b45579f5b585a314e9091",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "5",
+          "label": "抵押人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5a4da2b43e1a42c8ab12f6661d154a17",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "6",
+          "label": "债务人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5d3b7116dff041b1896cf34b6350982e",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "7",
+          "label": "预告权利人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "f1503d73983d445282169262ebdb3bb0",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "8",
+          "label": "预告义务人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "15b50fc2dcdc4ada9c97607876c60a5d",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "9",
+          "label": "预告抵押权人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "ac47a47ff8374676b815b9e45195a344",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "10",
+          "label": "预告抵押人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "d04e276eb60b407895e642828c4bfa09",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "11",
+          "label": "预告债务人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "25b674d0b44747c1808be052f1413726",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "12",
+          "label": "查封对象",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "b12f5cba9a9344a7be76ef66f06f4cb5",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "13",
+          "label": "异议申请人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "54b0e63416fa46f4864c7eaaa54195e6",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "14",
+          "label": "地役权人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "b85b4763bec144da8f64269496c6437a",
+          "childrens": null,
+          "pid": "c8f315bba9b048fa8d3d7040ab1d7c9e",
+          "pids": "c8f315bba9b048fa8d3d7040ab1d7c9e,",
+          "value": "15",
+          "label": "地役人",
+          "type": "权利人类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "60",
+      "label": "权利人类型",
+      "type": "权利人类型",
+      "description": "QLRLX",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "829b1b769b984d91a053edca255fa39e",
+      "childrens": [
+        {
+          "id": "4385b825192d4ca19287a87b64871dd1",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "1",
+          "label": "钢结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c6cd5be28b2e4dfb8d8b9ded3bfa1001",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "2",
+          "label": "钢和钢筋混凝土结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "3245d258d5354e1c8700829e42ef24df",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "3",
+          "label": "钢筋混凝土结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "dac913dec1744fca820d018e3bcd6dce",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "4",
+          "label": "混合结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "f05c1ff0745346e1b11118a3bea0db4d",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "5",
+          "label": "砖木结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "f9a43f892aa24761bb2bdf82458a3241",
+          "childrens": null,
+          "pid": "829b1b769b984d91a053edca255fa39e",
+          "pids": "829b1b769b984d91a053edca255fa39e,",
+          "value": "6",
+          "label": "其它结构",
+          "type": "建筑结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "66",
+      "label": "建筑结构",
+      "type": "建筑结构",
+      "description": "JZJG",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "8de188f2698c4001908690b36d40b364",
+      "childrens": [
+        {
+          "id": "240ec2603e6f4e679828faf2c0d28d47",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "5",
+          "label": "限价普通商品住房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "bfb09346a1214921b954b4d4baac9df5",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "6",
+          "label": "经济适用住房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "3a31a32d39684a49b180546e3fda7a51",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "7",
+          "label": "定销商品房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "d6898a1fd51d465a9634769515e339a1",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "8",
+          "label": "集资建房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "60277a3882374de8b8b6b40d258a0a73",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "9",
+          "label": "福利房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "eb95fe91c1a6496bae904e078ee50135",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "99",
+          "label": "其他",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "56dbef85ff43446ba06f36a58413ca28",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "0",
+          "label": "市场化商品房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "3f196ad6886645ed834471c518368195",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "1",
+          "label": "动迁房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5617ca0ab24f4255b7e93facb419dc0c",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "2",
+          "label": "配套商品房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c0bb2aca6d7e445ab4835f5fee2153b4",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "3",
+          "label": "公共租赁房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "85b7db2b84fa49bf9e8a5213f3f2dffe",
+          "childrens": null,
+          "pid": "8de188f2698c4001908690b36d40b364",
+          "pids": "8de188f2698c4001908690b36d40b364,",
+          "value": "4",
+          "label": "廉租房",
+          "type": "房屋性质",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "房屋性质",
+      "type": "房屋性质",
+      "description": "FWXZ",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "1981c95e2ee245238cc3b7648c8ac422",
+      "childrens": [
+        {
+          "id": "c6af98cd94524a45933422fb1a1900c1",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "2",
+          "label": "港澳台身份证",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "a00ba72563b94da7aaa9bc0be40322e0",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "3",
+          "label": "护照",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "0caf56267cc74a5a954d3ed9f9bbd12e",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "4",
+          "label": "户口薄",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "81c5f879a03f43e88aae7f59d77d527b",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "5",
+          "label": "军官证",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5d0c9c7363f7475c91b44e57bdefe9d8",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "6",
+          "label": "组织机构代码",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "487720972951433b90ebe522a5cae9b9",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "7",
+          "label": "营业执照",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "09563f6feadd46b6b905bfea6baea095",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "1",
+          "label": "身份证",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "dd9aba0d55e341dfaedb16426df04783",
+          "childrens": null,
+          "pid": "1981c95e2ee245238cc3b7648c8ac422",
+          "pids": "1981c95e2ee245238cc3b7648c8ac422,",
+          "value": "8",
+          "label": "统一社会信用代码",
+          "type": "证件种类",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "3",
+      "label": "证件种类",
+      "type": "证件种类",
+      "description": "ZJZL",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "16095abe413548fda90fe4a66c744c13",
+      "childrens": [
+        {
+          "id": "3cf6a54e98194a38acf000708636dfe6",
+          "childrens": null,
+          "pid": "16095abe413548fda90fe4a66c744c13",
+          "pids": "16095abe413548fda90fe4a66c744c13,",
+          "value": "1",
+          "label": "预售",
+          "type": "销售方式",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "743b4e92dde9470fa89e56f1af374587",
+          "childrens": null,
+          "pid": "16095abe413548fda90fe4a66c744c13",
+          "pids": "16095abe413548fda90fe4a66c744c13,",
+          "value": "2",
+          "label": "现售",
+          "type": "销售方式",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "26",
+      "label": "销售方式",
+      "type": "销售方式",
+      "description": "销售方式-预售/现售",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "0a4fd08151eb4aa4821dbec6a3c455d3",
+      "childrens": [
+        {
+          "id": "aa52d7cef29f4060b9da2c4e337254ef",
+          "childrens": null,
+          "pid": "0a4fd08151eb4aa4821dbec6a3c455d3",
+          "pids": "0a4fd08151eb4aa4821dbec6a3c455d3,",
+          "value": "1",
+          "label": "人民币",
+          "type": "货币种类",
+          "description": "RMB",
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "27",
+      "label": "货币种类",
+      "type": "货币种类",
+      "description": "HBZL",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "31af650cda27442087ee9b6951904237",
+      "childrens": [
+        {
+          "id": "fc50ae04ccf642c3b3fa86e53aae148d",
+          "childrens": null,
+          "pid": "31af650cda27442087ee9b6951904237",
+          "pids": "31af650cda27442087ee9b6951904237,",
+          "value": "1",
+          "label": "一次性付款",
+          "type": "付款类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "d6c5ee020b6645d98d691e2cbd644432",
+          "childrens": null,
+          "pid": "31af650cda27442087ee9b6951904237",
+          "pids": "31af650cda27442087ee9b6951904237,",
+          "value": "2",
+          "label": "分期付款",
+          "type": "付款类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "30",
+      "label": "付款类型",
+      "type": "付款类型",
+      "description": "FKLX",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "7ed093534655438e8c738faa9e2d36de",
+      "childrens": [
+        {
+          "id": "cf6adc3a4a7542debea1a968f4b3ee6b",
+          "childrens": null,
+          "pid": "7ed093534655438e8c738faa9e2d36de",
+          "pids": "7ed093534655438e8c738faa9e2d36de,",
+          "value": "1",
+          "label": "商业贷款",
+          "type": "贷款方式",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "b346c1ee0e09469585d62d0b573c9805",
+          "childrens": null,
+          "pid": "7ed093534655438e8c738faa9e2d36de",
+          "pids": "7ed093534655438e8c738faa9e2d36de,",
+          "value": "2",
+          "label": "公积金贷款",
+          "type": "贷款方式",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "31",
+      "label": "贷款方式",
+      "type": "贷款方式",
+      "description": "DKFS",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "a64fc925eccf4565aeaeb1ae56257dc0",
+      "childrens": [
+        {
+          "id": "fe8fdc5d56c5417a88766df4baf91b7d",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "1",
+          "label": "保存",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "a727328404e34f7488832f89f5ba57d5",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "2",
+          "label": "提交",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "4354b50f5b404bb3b28068a0a1a53128",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "3",
+          "label": "受理",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "15791af3c040403baaef077c1d1b1217",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "4",
+          "label": "备案",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "7560a26ac5db48a0b198959cc3899603",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "5",
+          "label": "审核未通过",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "92ef318b671841b89cd24a10af28063d",
+          "childrens": null,
+          "pid": "a64fc925eccf4565aeaeb1ae56257dc0",
+          "pids": "a64fc925eccf4565aeaeb1ae56257dc0,",
+          "value": "6",
+          "label": "无效",
+          "type": "状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "32",
+      "label": "状态",
+      "type": "状态",
+      "description": "ZT状态(保存/提交/受理/审核未通过/备案/无效)",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "97b2a93ad6b04c34a606c96e6def4268",
+      "childrens": [
+        {
+          "id": "f7723a1ad8074d60a81b33a29377b5ce",
+          "childrens": null,
+          "pid": "97b2a93ad6b04c34a606c96e6def4268",
+          "pids": "97b2a93ad6b04c34a606c96e6def4268,",
+          "value": "1",
+          "label": "首次",
+          "type": "业务类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "f849396ea00f420a91d44f0272ab11d2",
+          "childrens": null,
+          "pid": "97b2a93ad6b04c34a606c96e6def4268",
+          "pids": "97b2a93ad6b04c34a606c96e6def4268,",
+          "value": "2",
+          "label": "变更",
+          "type": "业务类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "1049802ac4434adb8d1bde53245a81bb",
+          "childrens": null,
+          "pid": "97b2a93ad6b04c34a606c96e6def4268",
+          "pids": "97b2a93ad6b04c34a606c96e6def4268,",
+          "value": "3",
+          "label": "注销",
+          "type": "业务类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "33",
+      "label": "业务类型",
+      "type": "业务类型",
+      "description": "YWLX",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "665d4ec6ee06489f8881e6f8ea361457",
+      "childrens": [
+        {
+          "id": "39f8b492de6649e887ed5f383fcb7b91",
+          "childrens": null,
+          "pid": "665d4ec6ee06489f8881e6f8ea361457",
+          "pids": "665d4ec6ee06489f8881e6f8ea361457,",
+          "value": "1",
+          "label": "平方米",
+          "type": "面积单位",
+          "description": "㎡",
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5ea5e5f89b5247e39ddeb4e6dbf186b6",
+          "childrens": null,
+          "pid": "665d4ec6ee06489f8881e6f8ea361457",
+          "pids": "665d4ec6ee06489f8881e6f8ea361457,",
+          "value": "2",
+          "label": "亩",
+          "type": "面积单位",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "652790d3eb2b46d9a90fed3358ccfdf0",
+          "childrens": null,
+          "pid": "665d4ec6ee06489f8881e6f8ea361457",
+          "pids": "665d4ec6ee06489f8881e6f8ea361457,",
+          "value": "3",
+          "label": "公顷",
+          "type": "面积单位",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "34",
+      "label": "面积单位",
+      "type": "面积单位",
+      "description": "DYTDMJ",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "7e2246ee8e1549be9125005b60fe73bd",
+      "childrens": [
+        {
+          "id": "12b035cc34414e068c92721f936f9a56",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "2",
+          "label": "二居室",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "73c0becbb15b48bab39136afdd7f0d74",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "3",
+          "label": "三居室",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "3c66991952914899af21157316e5def4",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "4",
+          "label": "四居室",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "4546d7dd83244300b08eae3bbef33c37",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "5",
+          "label": "五居室",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c79877d9b91f480caaa1fc9461ba04ca",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "99",
+          "label": "其他",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "9c958900a3b348639e75000f447137dd",
+          "childrens": null,
+          "pid": "7e2246ee8e1549be9125005b60fe73bd",
+          "pids": "7e2246ee8e1549be9125005b60fe73bd,",
+          "value": "1",
+          "label": "一居室",
+          "type": "户型结构",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "35",
+      "label": "户型结构",
+      "type": "户型结构",
+      "description": "HXJG",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "5289fda956ee447eb0ac82b6cb47b123",
+      "childrens": [
+        {
+          "id": "9bd62e88df8f4d56b2dcd9bc0450f391",
+          "childrens": [
+            {
+              "id": "c67c16ad8d53428ab7ab34d2c4413b8a",
+              "childrens": null,
+              "pid": "9bd62e88df8f4d56b2dcd9bc0450f391",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,9bd62e88df8f4d56b2dcd9bc0450f391,",
+              "value": "41",
+              "label": "教育",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "975898965a574f2dabe47b6990588869",
+              "childrens": null,
+              "pid": "9bd62e88df8f4d56b2dcd9bc0450f391",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,9bd62e88df8f4d56b2dcd9bc0450f391,",
+              "value": "42",
+              "label": "医疗卫生",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "56023b5613094f4f8237323492ab8527",
+              "childrens": null,
+              "pid": "9bd62e88df8f4d56b2dcd9bc0450f391",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,9bd62e88df8f4d56b2dcd9bc0450f391,",
+              "value": "43",
+              "label": "科研",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "40",
+          "label": "教育、医疗、卫生、科研",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+          "childrens": [
+            {
+              "id": "0fb1158172ab41b9a01634fed53e6286",
+              "childrens": null,
+              "pid": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,c44ccd0bf7cf46adb6ced6f0ad396beb,",
+              "value": "51",
+              "label": "文化",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "1ba1f1380dd64ffb8d82a23bd16950fc",
+              "childrens": null,
+              "pid": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,c44ccd0bf7cf46adb6ced6f0ad396beb,",
+              "value": "52",
+              "label": "新闻",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "77c1a579036e4eb2bba5470ab2afff60",
+              "childrens": null,
+              "pid": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,c44ccd0bf7cf46adb6ced6f0ad396beb,",
+              "value": "53",
+              "label": "娱乐",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "1ac3eb1af245422da60b8dc5b02c3787",
+              "childrens": null,
+              "pid": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,c44ccd0bf7cf46adb6ced6f0ad396beb,",
+              "value": "54",
+              "label": "园林绿化",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e7b6066dce604700a5f7213a87615f2d",
+              "childrens": null,
+              "pid": "c44ccd0bf7cf46adb6ced6f0ad396beb",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,c44ccd0bf7cf46adb6ced6f0ad396beb,",
+              "value": "55",
+              "label": "体育",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "50",
+          "label": "文化、娱乐、体育",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "fbeaf88bc1de4deabcc07e30cda37dab",
+          "childrens": null,
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "60",
+          "label": "办公",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "9af91896cbc84d68a55cecd72cd5353a",
+          "childrens": null,
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "70",
+          "label": "军事",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "036ea60421e94ea7bb7d67a540b2d0fa",
+          "childrens": [
+            {
+              "id": "ae7ccafbbb3d4b3684226bc86bb8ebfb",
+              "childrens": null,
+              "pid": "036ea60421e94ea7bb7d67a540b2d0fa",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,036ea60421e94ea7bb7d67a540b2d0fa,",
+              "value": "81",
+              "label": "涉外",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "57779f7b16be4c00ba10dc519f753e24",
+              "childrens": null,
+              "pid": "036ea60421e94ea7bb7d67a540b2d0fa",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,036ea60421e94ea7bb7d67a540b2d0fa,",
+              "value": "82",
+              "label": "宗教",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "66a37a91723043bdb3f954a0357c0ef8",
+              "childrens": null,
+              "pid": "036ea60421e94ea7bb7d67a540b2d0fa",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,036ea60421e94ea7bb7d67a540b2d0fa,",
+              "value": "83",
+              "label": "监狱",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "563e82ad3605440988e40f341406c73b",
+              "childrens": null,
+              "pid": "036ea60421e94ea7bb7d67a540b2d0fa",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,036ea60421e94ea7bb7d67a540b2d0fa,",
+              "value": "84",
+              "label": "物管用房",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "5178751a3d41459ba1b34869614414e5",
+              "childrens": null,
+              "pid": "036ea60421e94ea7bb7d67a540b2d0fa",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,036ea60421e94ea7bb7d67a540b2d0fa,",
+              "value": "85",
+              "label": "车位",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "80",
+          "label": "其他",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "e83d25d173ad47a6a520c0679ea6b5de",
+          "childrens": [
+            {
+              "id": "b2d419cd841e4cd6abdb9f74b5da9dcc",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "21",
+              "label": "工业",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "7bd73f502e1244888c8fa063874d3dcb",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "22",
+              "label": "公共设施",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "ea3d2ce69ab944fe8b29b3043120b4f1",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "23",
+              "label": "铁路",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "60cfb6cfb58f42abbaff3ff37001f3a5",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "24",
+              "label": "民航",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "4cce1bb8c6b147c7b0c2a115039da830",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "25",
+              "label": "航运",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "292d6a047fc94d0ca6b352fa98bc2aac",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "26",
+              "label": "公共运输",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "4fa09b30869c49d296b59b44771b7d74",
+              "childrens": null,
+              "pid": "e83d25d173ad47a6a520c0679ea6b5de",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,e83d25d173ad47a6a520c0679ea6b5de,",
+              "value": "27",
+              "label": "仓储",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "20",
+          "label": "工业、交通、仓储",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2f2477cd139b426b852f4f0ab0df7d00",
+          "childrens": [
+            {
+              "id": "6947f601b44f4f3986bf2fe19a1a0005",
+              "childrens": [
+                {
+                  "id": "0fa8d2b71f3a4bf3aafe9bcc199e5272",
+                  "childrens": null,
+                  "pid": "6947f601b44f4f3986bf2fe19a1a0005",
+                  "pids": "5289fda956ee447eb0ac82b6cb47b123,2f2477cd139b426b852f4f0ab0df7d00,6947f601b44f4f3986bf2fe19a1a0005,",
+                  "value": "111",
+                  "label": "别墅",
+                  "type": "房屋用途",
+                  "description": null,
+                  "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+                },
+                {
+                  "id": "2dbd8ea2e85e4d6a86352a058f5c673b",
+                  "childrens": null,
+                  "pid": "6947f601b44f4f3986bf2fe19a1a0005",
+                  "pids": "5289fda956ee447eb0ac82b6cb47b123,2f2477cd139b426b852f4f0ab0df7d00,6947f601b44f4f3986bf2fe19a1a0005,",
+                  "value": "112",
+                  "label": "高档公寓",
+                  "type": "房屋用途",
+                  "description": null,
+                  "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+                }
+              ],
+              "pid": "2f2477cd139b426b852f4f0ab0df7d00",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,2f2477cd139b426b852f4f0ab0df7d00,",
+              "value": "11",
+              "label": "成套住宅",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "55ee65ff26704414a2061f61d99bd46c",
+              "childrens": null,
+              "pid": "2f2477cd139b426b852f4f0ab0df7d00",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,2f2477cd139b426b852f4f0ab0df7d00,",
+              "value": "12",
+              "label": "非成套住宅",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "40a09c9c5b1c472faf71396259e52c0e",
+              "childrens": null,
+              "pid": "2f2477cd139b426b852f4f0ab0df7d00",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,2f2477cd139b426b852f4f0ab0df7d00,",
+              "value": "13",
+              "label": "集体宿舍",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "10",
+          "label": "住宅",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "8b2a86b05c664523aba34951fba47292",
+          "childrens": [
+            {
+              "id": "1f45cc9f6e5146c899ce7d4e21cb35f5",
+              "childrens": null,
+              "pid": "8b2a86b05c664523aba34951fba47292",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,8b2a86b05c664523aba34951fba47292,",
+              "value": "31",
+              "label": "商业服务",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "ebac18fd1cff4165a02a774aa7f91bd4",
+              "childrens": null,
+              "pid": "8b2a86b05c664523aba34951fba47292",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,8b2a86b05c664523aba34951fba47292,",
+              "value": "32",
+              "label": "经营",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "336833f8375e4c3699e9814add2b3d9d",
+              "childrens": null,
+              "pid": "8b2a86b05c664523aba34951fba47292",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,8b2a86b05c664523aba34951fba47292,",
+              "value": "33",
+              "label": "旅游",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "fb0ca939651c443d85ef1cd2f5f03c65",
+              "childrens": null,
+              "pid": "8b2a86b05c664523aba34951fba47292",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,8b2a86b05c664523aba34951fba47292,",
+              "value": "34",
+              "label": "金融保险",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "908deb97af4942c0b634e1235452f8bc",
+              "childrens": null,
+              "pid": "8b2a86b05c664523aba34951fba47292",
+              "pids": "5289fda956ee447eb0ac82b6cb47b123,8b2a86b05c664523aba34951fba47292,",
+              "value": "35",
+              "label": "电讯信息",
+              "type": "房屋用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "5289fda956ee447eb0ac82b6cb47b123",
+          "pids": "5289fda956ee447eb0ac82b6cb47b123,",
+          "value": "30",
+          "label": "商业、金融、信息",
+          "type": "房屋用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "36",
+      "label": "房屋用途",
+      "type": "房屋用途",
+      "description": "FWYT",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "dac68dd200cb44cf8613df0e49d2eb22",
+      "childrens": [
+        {
+          "id": "3ce534dbf4a7462ea324c7462fa8a659",
+          "childrens": [
+            {
+              "id": "3009916f93444f0daf99f2ec70fbefe5",
+              "childrens": null,
+              "pid": "3ce534dbf4a7462ea324c7462fa8a659",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,3ce534dbf4a7462ea324c7462fa8a659,",
+              "value": "houseBo.zl",
+              "label": "坐落",
+              "type": "房屋",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "48b38eb5c7834427bd6aacd28fb22baa",
+              "childrens": null,
+              "pid": "3ce534dbf4a7462ea324c7462fa8a659",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,3ce534dbf4a7462ea324c7462fa8a659,",
+              "value": "houseBo.mj",
+              "label": "面积",
+              "type": "房屋",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "dac68dd200cb44cf8613df0e49d2eb22",
+          "pids": "dac68dd200cb44cf8613df0e49d2eb22,",
+          "value": "houseBo",
+          "label": "房屋",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "9c9d8cbab3114922b8a4bb474e30face",
+          "childrens": [
+            {
+              "id": "a100e99e87194c80b046a9f2f432927d",
+              "childrens": null,
+              "pid": "9c9d8cbab3114922b8a4bb474e30face",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,9c9d8cbab3114922b8a4bb474e30face,",
+              "value": "ownershipBo.tdzh",
+              "label": "土地证号",
+              "type": "产权信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "3d5ef2949f2b4a559b3a2b0b01216f75",
+              "childrens": null,
+              "pid": "9c9d8cbab3114922b8a4bb474e30face",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,9c9d8cbab3114922b8a4bb474e30face,",
+              "value": "ownershipBo.tdsyqmj",
+              "label": "土地使用权面积",
+              "type": "产权信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "d9ac896685984df6baacf1e41133e18b",
+              "childrens": null,
+              "pid": "9c9d8cbab3114922b8a4bb474e30face",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,9c9d8cbab3114922b8a4bb474e30face,",
+              "value": "ownershipBo.tdsyjssj",
+              "label": "土地使用权结束时间",
+              "type": "产权信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "dac68dd200cb44cf8613df0e49d2eb22",
+          "pids": "dac68dd200cb44cf8613df0e49d2eb22,",
+          "value": "ownershipBo",
+          "label": "产权信息",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "fc029f3343594f43a948954862e0828b",
+          "childrens": [
+            {
+              "id": "7357622b36e14fdfb258de9d842abd42",
+              "childrens": null,
+              "pid": "fc029f3343594f43a948954862e0828b",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,fc029f3343594f43a948954862e0828b,",
+              "value": "projectManagerInfo.xmmc",
+              "label": "项目名称",
+              "type": "项目信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "de168649c5c4436f8b9683a57402e3bc",
+              "childrens": null,
+              "pid": "fc029f3343594f43a948954862e0828b",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,fc029f3343594f43a948954862e0828b,",
+              "value": "projectManagerInfo.jsgcghxkzh",
+              "label": "建设工程规划许可证号",
+              "type": "项目信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "970e15ce6bfd48bcbbd3f22f4ed00698",
+              "childrens": null,
+              "pid": "fc029f3343594f43a948954862e0828b",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,fc029f3343594f43a948954862e0828b,",
+              "value": "projectManagerInfo.jsgcsgxkzh",
+              "label": "建设工程施工许可证号",
+              "type": "项目信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "dac68dd200cb44cf8613df0e49d2eb22",
+          "pids": "dac68dd200cb44cf8613df0e49d2eb22,",
+          "value": "projectManagerInfo",
+          "label": "项目信息",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "19757fea0ed54d8b89358db893aa66ef",
+          "childrens": [
+            {
+              "id": "3e05a5d8c1974c729de5aaf7eab3e4a4",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.qlrmc",
+              "label": "权利人姓名",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "f6b12bc016a9452aa0f3a5b72b664a24",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.zjzl",
+              "label": "证件类型",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "54107cf27e664ca79919e296c863f75a",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.zjh",
+              "label": "证件号",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "7be2aad37d6043039a08b32a3e44e9bf",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.dh",
+              "label": "电话",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "7761de8be8864415814e77ef939270da",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.dz",
+              "label": "地址",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e851dd93f9de42c0b4c26d63c249e309",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.frmc",
+              "label": "法人名称",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "308248d694f94b0c9da89131aef3e5e0",
+              "childrens": null,
+              "pid": "19757fea0ed54d8b89358db893aa66ef",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,19757fea0ed54d8b89358db893aa66ef,",
+              "value": "obligeeBoList.frdh",
+              "label": "法人电话",
+              "type": "产权人信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "dac68dd200cb44cf8613df0e49d2eb22",
+          "pids": "dac68dd200cb44cf8613df0e49d2eb22,",
+          "value": "obligeeBoList",
+          "label": "产权人信息",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "650e9f45eb444f96bc7e36ebb66a1e6f",
+          "childrens": [
+            {
+              "id": "3beaba0d2d1f4f63a588bea2cd4e6a30",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.frzjh",
+              "label": "法人证件号",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "7831c174f21146c897ff2fa22126de7e",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.qymc",
+              "label": "企业名称",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2562a37c221d4650be1ece21ed53eb2f",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.txdz",
+              "label": "通讯地址",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "956bba2841954c5382d32d4ae674ce45",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.yzbm",
+              "label": "邮政编码",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "ed0e15b8838f470ba92695f6978c5e5f",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "businessLicense.yyzzzch",
+              "label": "营业执照证书号",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "95e660724b2f4394930a36167482c6e1",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "businessLicense.zzdjbh",
+              "label": "资质证书号",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "6db479c2a6be4756b48909f083b3f900",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.frxm",
+              "label": "法人姓名",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "369964e5aaa3449ea99677e144a66311",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.qydh",
+              "label": "企业电话",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "7f219b6c3d1d4ab7a5ff21375ba460f1",
+              "childrens": null,
+              "pid": "650e9f45eb444f96bc7e36ebb66a1e6f",
+              "pids": "dac68dd200cb44cf8613df0e49d2eb22,650e9f45eb444f96bc7e36ebb66a1e6f,",
+              "value": "companyInfo.frzjzl",
+              "label": "法人证件种类",
+              "type": "企业信息",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "dac68dd200cb44cf8613df0e49d2eb22",
+          "pids": "dac68dd200cb44cf8613df0e49d2eb22,",
+          "value": "companyInfo",
+          "label": "企业信息",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "合同模板取值",
+      "label": "合同模板取值",
+      "type": "合同模板取值",
+      "description": "合同模板取值",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "3794ca37a0fe43af9c0921de343e516f",
+      "childrens": [
+        {
+          "id": "c74030eef3d24730aea238fd43a2081e",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.zl",
+          "label": "房屋坐落",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "94cc667e87184f12bddd554bfb0105da",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.fwyt",
+          "label": "房屋用途",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "e34cc661612a489786d00f4f46af94fb",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.jzmj",
+          "label": "建筑面积",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c12564d357974bfb914e5c0d2812e2ad",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.hbzl",
+          "label": "交易货币种类",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "4aa6c5d071e84793b618fda3f01dd58f",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.dj",
+          "label": "交易单价",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5fc3b473fd554a0f8c31572f0cec258b",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.zj",
+          "label": "交易总价",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "7d22f871dd5e40f0ac20ab99b1712aa2",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.fklx",
+          "label": "付款类型",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "c73e83370c234a3b89c118ce78e77ba2",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.dkfs",
+          "label": "贷款方式",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "891fc3d6d07b42ae9675c0b9ded02e0f",
+          "childrens": null,
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "contract.fksj",
+          "label": "付款时间",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "4508c456003e45d0a8655153d80398ed",
+          "childrens": [
+            {
+              "id": "e519c17812bf4e2e888682d84c40b3fd",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.qlrmc",
+              "label": "姓名",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e4ae1ca8b88f4cd3a5933b5664ec22f3",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.zjzl",
+              "label": "证件种类",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "6ec4af0cf6864f6c934ccac75b80439e",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.zjh",
+              "label": "证件号",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "02bdcc9bd7004e6eae7b667f69e18f41",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.yb",
+              "label": "邮编",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "81b25a5d9e3d4dccbafb862ee948cd2f",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.dz",
+              "label": "通讯地址",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b97ef748cb3c42d59f72571095d4441a",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.dlrmc",
+              "label": "代理人名称",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0b8e7d28c3e74f85aa5989b63adefb1c",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.dlrzjzl",
+              "label": "代理人证件种类",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e4c4bbb7afec40a48fbda0818f5f5aff",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.dlrzjh",
+              "label": "代理人证件号",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2d44d3dfaeb54f44a5cd79676e6aa656",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "msrList.dlrdh",
+              "label": "代理人电话",
+              "type": "买受人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "msrList",
+          "label": "买受人",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5a4263370e374de6aa324b08c31c7dcf",
+          "childrens": [
+            {
+              "id": "e4ae3478500148b2b17139bd2cc4bb95",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.qlrmc",
+              "label": "姓名/名称",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "56dbcca797a446d9bd2b3322dd0e159a",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.zjzl",
+              "label": "证件种类",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "07bca093f4f44f2abf2dd57221494c72",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.zjh",
+              "label": "证件号",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0bb4fc24dd36425a8816f40d801dd1cc",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.frmc",
+              "label": "法人姓名",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b1787823f4ab4e969a0ddd48ec5680af",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.dz",
+              "label": "通讯地址",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "574bcbe9812b44e9bc2153a6411d0d00",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.yb",
+              "label": "邮编",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "a3343380fb9442509f7888671d537582",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.dlrmc",
+              "label": "代理人名称",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "10108377f2c34d0aa614bee3544a5895",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.dlrzjzl",
+              "label": "代理人证件种类",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e8708a68d10448fd918eab31390763f3",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.dlrzjh",
+              "label": "代理人证件号",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b2226581432848838344e4b6a9e86d87",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "cmrList.dlrdh",
+              "label": "代理人电话",
+              "type": "出卖人",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "cmrList",
+          "label": "出卖人",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "合同模板存值",
+      "label": "合同模板存值",
+      "type": "合同模板存值",
+      "description": "合同模板存值",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "a292e838dad94944989706f84a2caebe",
+      "childrens": [
+        {
+          "id": "20359f07a74a41469e1de529834fb6c8",
+          "childrens": null,
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "80",
+          "label": "商服住宅用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "1aba4e2510ad4f1eb51a3e56234daed0",
+          "childrens": [
+            {
+              "id": "4e9ec3e14e2f4f18b628003fd34df5fb",
+              "childrens": null,
+              "pid": "1aba4e2510ad4f1eb51a3e56234daed0",
+              "pids": "a292e838dad94944989706f84a2caebe,1aba4e2510ad4f1eb51a3e56234daed0,",
+              "value": "011",
+              "label": "水田",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8f045251e85a4c6e958b66009c00005a",
+              "childrens": null,
+              "pid": "1aba4e2510ad4f1eb51a3e56234daed0",
+              "pids": "a292e838dad94944989706f84a2caebe,1aba4e2510ad4f1eb51a3e56234daed0,",
+              "value": "012",
+              "label": "水浇地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "d0c7ed3f321b41d480487a8b59bf1017",
+              "childrens": null,
+              "pid": "1aba4e2510ad4f1eb51a3e56234daed0",
+              "pids": "a292e838dad94944989706f84a2caebe,1aba4e2510ad4f1eb51a3e56234daed0,",
+              "value": "012",
+              "label": "旱地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "01",
+          "label": "耕地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "4bc8cb399de247ae9ab2bc842a45e528",
+          "childrens": [
+            {
+              "id": "493a1947a80d4c13a240a44fc53581df",
+              "childrens": null,
+              "pid": "4bc8cb399de247ae9ab2bc842a45e528",
+              "pids": "a292e838dad94944989706f84a2caebe,4bc8cb399de247ae9ab2bc842a45e528,",
+              "value": "021",
+              "label": "果园",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8ff58fb5ef3c4e4bb7b9043cad7e76af",
+              "childrens": null,
+              "pid": "4bc8cb399de247ae9ab2bc842a45e528",
+              "pids": "a292e838dad94944989706f84a2caebe,4bc8cb399de247ae9ab2bc842a45e528,",
+              "value": "022",
+              "label": "茶园",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0e00b9d5fdec42e0a3de1afbd64afc29",
+              "childrens": null,
+              "pid": "4bc8cb399de247ae9ab2bc842a45e528",
+              "pids": "a292e838dad94944989706f84a2caebe,4bc8cb399de247ae9ab2bc842a45e528,",
+              "value": "023",
+              "label": "其他园地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "02",
+          "label": "园地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "16807af09d1a499f85bdabba1868fcec",
+          "childrens": [
+            {
+              "id": "2c912c2a3e594e7c964f1f586f48c478",
+              "childrens": null,
+              "pid": "16807af09d1a499f85bdabba1868fcec",
+              "pids": "a292e838dad94944989706f84a2caebe,16807af09d1a499f85bdabba1868fcec,",
+              "value": "031",
+              "label": "乔木林地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "ba542e2dafa543a7b0a372e7981eccad",
+              "childrens": null,
+              "pid": "16807af09d1a499f85bdabba1868fcec",
+              "pids": "a292e838dad94944989706f84a2caebe,16807af09d1a499f85bdabba1868fcec,",
+              "value": "032",
+              "label": "灌木林地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2708f6c50255427ca7ae71fd4e104fd6",
+              "childrens": null,
+              "pid": "16807af09d1a499f85bdabba1868fcec",
+              "pids": "a292e838dad94944989706f84a2caebe,16807af09d1a499f85bdabba1868fcec,",
+              "value": "033",
+              "label": "其他林地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "03",
+          "label": "林地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "fc3ae48ed5654a2ebe47f97ea772f679",
+          "childrens": [
+            {
+              "id": "4fd44bba8273486d980c12828fb798c6",
+              "childrens": null,
+              "pid": "fc3ae48ed5654a2ebe47f97ea772f679",
+              "pids": "a292e838dad94944989706f84a2caebe,fc3ae48ed5654a2ebe47f97ea772f679,",
+              "value": "041",
+              "label": "天然牧草地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "72f5517bc8824a69a6ffac5762a2ccf7",
+              "childrens": null,
+              "pid": "fc3ae48ed5654a2ebe47f97ea772f679",
+              "pids": "a292e838dad94944989706f84a2caebe,fc3ae48ed5654a2ebe47f97ea772f679,",
+              "value": "042",
+              "label": "人工牧草地",
+              "type": "草地",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8ee8e2f016384946ae878c9232eaa9be",
+              "childrens": null,
+              "pid": "fc3ae48ed5654a2ebe47f97ea772f679",
+              "pids": "a292e838dad94944989706f84a2caebe,fc3ae48ed5654a2ebe47f97ea772f679,",
+              "value": "043",
+              "label": "其他草地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "04",
+          "label": "草地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2350d423861b4e72926ff7ced8fccc27",
+          "childrens": [
+            {
+              "id": "5ae85f63fde84f8c89a4d6dc100d2b0a",
+              "childrens": null,
+              "pid": "2350d423861b4e72926ff7ced8fccc27",
+              "pids": "a292e838dad94944989706f84a2caebe,2350d423861b4e72926ff7ced8fccc27,",
+              "value": "051",
+              "label": "批发零售用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "332bb9a137d7447aa349458078994b58",
+              "childrens": null,
+              "pid": "2350d423861b4e72926ff7ced8fccc27",
+              "pids": "a292e838dad94944989706f84a2caebe,2350d423861b4e72926ff7ced8fccc27,",
+              "value": "052",
+              "label": "住宿餐饮用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e827f3c600de49f189a968478da84441",
+              "childrens": null,
+              "pid": "2350d423861b4e72926ff7ced8fccc27",
+              "pids": "a292e838dad94944989706f84a2caebe,2350d423861b4e72926ff7ced8fccc27,",
+              "value": "052",
+              "label": "商务金融用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "05",
+          "label": "商服用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "bd5a67948d5d4291b9cb17a3c4318b8f",
+          "childrens": [
+            {
+              "id": "7417c0796de34aef9098ad79014e4b2c",
+              "childrens": null,
+              "pid": "bd5a67948d5d4291b9cb17a3c4318b8f",
+              "pids": "a292e838dad94944989706f84a2caebe,bd5a67948d5d4291b9cb17a3c4318b8f,",
+              "value": "061",
+              "label": "工业用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "3884b73e5b3e48e6b838cc43ce1a6b1e",
+              "childrens": null,
+              "pid": "bd5a67948d5d4291b9cb17a3c4318b8f",
+              "pids": "a292e838dad94944989706f84a2caebe,bd5a67948d5d4291b9cb17a3c4318b8f,",
+              "value": "062",
+              "label": "采矿用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "29a2b2ec5e36439b8a51d0b6940a7dee",
+              "childrens": null,
+              "pid": "bd5a67948d5d4291b9cb17a3c4318b8f",
+              "pids": "a292e838dad94944989706f84a2caebe,bd5a67948d5d4291b9cb17a3c4318b8f,",
+              "value": "063",
+              "label": "仓储用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "06",
+          "label": "工矿仓储用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "1f0ddc30c8b4435c99c30822082783d2",
+          "childrens": [
+            {
+              "id": "770da776162a46f8bba0d00bbaa84e15",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "081",
+              "label": "机关团体用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "49861f43aac647bf9a18428231191e1f",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "082",
+              "label": "新闻出版用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "14915a592d034e13852b059a09357899",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "083",
+              "label": "科教用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "3d9f3d16e69b4f5b8cea62aec015fc34",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "084",
+              "label": "医卫慈善用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0c62b40acf3a4a71a85dd13beac3a34e",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "085",
+              "label": "文体娱乐用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "02de779291b54cb3977fdc6833c7c77d",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "086",
+              "label": "公共设施用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2196bb0a8f574aeaaf8756371fa4f4c7",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "087",
+              "label": "公园与绿地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "c19626bdcc1a4068bae924c09732c6d9",
+              "childrens": null,
+              "pid": "1f0ddc30c8b4435c99c30822082783d2",
+              "pids": "a292e838dad94944989706f84a2caebe,1f0ddc30c8b4435c99c30822082783d2,",
+              "value": "088",
+              "label": "风景名胜设施用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "08",
+          "label": "公共管理与公共服务用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "28731ba06dea41c3bf86af2f0c148e0d",
+          "childrens": [
+            {
+              "id": "60822484a4d84497846f0fe538e4d119",
+              "childrens": null,
+              "pid": "28731ba06dea41c3bf86af2f0c148e0d",
+              "pids": "a292e838dad94944989706f84a2caebe,28731ba06dea41c3bf86af2f0c148e0d,",
+              "value": "091",
+              "label": "军事设施用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "43ff7c1408c8409ca300c8882cab9b18",
+              "childrens": null,
+              "pid": "28731ba06dea41c3bf86af2f0c148e0d",
+              "pids": "a292e838dad94944989706f84a2caebe,28731ba06dea41c3bf86af2f0c148e0d,",
+              "value": "092",
+              "label": "使领馆用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0b337273b6ea4c6baed04fc9e1877041",
+              "childrens": null,
+              "pid": "28731ba06dea41c3bf86af2f0c148e0d",
+              "pids": "a292e838dad94944989706f84a2caebe,28731ba06dea41c3bf86af2f0c148e0d,",
+              "value": "093",
+              "label": "监教场所用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "40cd3bb0ac804e48a4cb1055b6e200d0",
+              "childrens": null,
+              "pid": "28731ba06dea41c3bf86af2f0c148e0d",
+              "pids": "a292e838dad94944989706f84a2caebe,28731ba06dea41c3bf86af2f0c148e0d,",
+              "value": "094",
+              "label": "宗教用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "624a6547723042b592e54b43f57aa7f5",
+              "childrens": null,
+              "pid": "28731ba06dea41c3bf86af2f0c148e0d",
+              "pids": "a292e838dad94944989706f84a2caebe,28731ba06dea41c3bf86af2f0c148e0d,",
+              "value": "095",
+              "label": "殡葬用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "09",
+          "label": "特殊用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "585b2de9f33e4f94a84745403951dc0c",
+          "childrens": [
+            {
+              "id": "5124290616fa4644a5affe8f35d66969",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "101",
+              "label": "铁路用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "5cdf647a300140eda18e02125660fb6a",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "102",
+              "label": "公路用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0d24cb4ed1414d3fb1cad1d955c62fde",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "103",
+              "label": "街巷用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "f09b373eadb84936b69abc797c05c771",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "104",
+              "label": "农村道路",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "35cbfe588a584d38a5cc6e60e7395c45",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "105",
+              "label": "机场用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "15e5e5e38abc485b833c074305e05a78",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "106",
+              "label": "港口码头用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "9d83e2db1d334f6fbcf55e6ec75dbf60",
+              "childrens": null,
+              "pid": "585b2de9f33e4f94a84745403951dc0c",
+              "pids": "a292e838dad94944989706f84a2caebe,585b2de9f33e4f94a84745403951dc0c,",
+              "value": "107",
+              "label": "管道运输用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "10",
+          "label": "交通用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "bec80807c0ac45069bbcc65a589dc548",
+          "childrens": [
+            {
+              "id": "2ac03d7d0710407fa344f0b8b5247c40",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "111",
+              "label": "河流水面",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8d6db1eb86a947c19b952fdba7b16fa8",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "112",
+              "label": "湖泊水面",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "78ac8b73351d485eb9e11ec84ea27c95",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "113",
+              "label": "水库水面",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "6ea75f8fc80448f382d5d2f1adedadb8",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "114",
+              "label": "坑塘水面",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "098ba3a56e2a4506a35d3971a94f9986",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "115",
+              "label": "沿海滩涂",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2c48ef94360f47ffa6c9cfe0e7d9880c",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "116",
+              "label": "内陆滩涂",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "0da61b008f454384bd68e0f7f40a193e",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "117",
+              "label": "沟渠",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "fa50a5cbca1147fb9a7bb164190e2d86",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "118",
+              "label": "水工建筑用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8be45181b5d8440cbef2d2a2b0ac899d",
+              "childrens": null,
+              "pid": "bec80807c0ac45069bbcc65a589dc548",
+              "pids": "a292e838dad94944989706f84a2caebe,bec80807c0ac45069bbcc65a589dc548,",
+              "value": "119",
+              "label": "冰川及永久积雪",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "11",
+          "label": "水域及水利设施用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "11bca9c9090d4e1c8cdf31e876e14f96",
+          "childrens": [
+            {
+              "id": "04c1d03be38e4e739590a34754d57e40",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "121",
+              "label": "空闲地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "bc1c4562972245b98fee08f9e4df24cd",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "122",
+              "label": "设施农用地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "8013841fbc0a4b229acdec568b97dcdd",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "123",
+              "label": "田坎",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "03e38a551cb34c84b9a456b0980a7007",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "124",
+              "label": "盐碱地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b8193357a633489fa65195bf8bd0e4af",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "125",
+              "label": "沼泽地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "e23b15a1fefe4a08a6a3c06a5c16cf3e",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "126",
+              "label": "沙地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "1ad0fff857d44e4ab73f158e77dc1950",
+              "childrens": null,
+              "pid": "11bca9c9090d4e1c8cdf31e876e14f96",
+              "pids": "a292e838dad94944989706f84a2caebe,11bca9c9090d4e1c8cdf31e876e14f96,",
+              "value": "127",
+              "label": "裸地",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "12",
+          "label": "其它土地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "29cdc7093d61406a8b23acd07cea11fb",
+          "childrens": [
+            {
+              "id": "489b0cb3306b4c62b7105f8019eda279",
+              "childrens": null,
+              "pid": "29cdc7093d61406a8b23acd07cea11fb",
+              "pids": "a292e838dad94944989706f84a2caebe,29cdc7093d61406a8b23acd07cea11fb,",
+              "value": "201",
+              "label": "城市",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "85398fe4d33640f78feb408413d68411",
+              "childrens": null,
+              "pid": "29cdc7093d61406a8b23acd07cea11fb",
+              "pids": "a292e838dad94944989706f84a2caebe,29cdc7093d61406a8b23acd07cea11fb,",
+              "value": "202",
+              "label": "建制镇",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "308b9d836a0646799da9e7af64e7e1c6",
+              "childrens": null,
+              "pid": "29cdc7093d61406a8b23acd07cea11fb",
+              "pids": "a292e838dad94944989706f84a2caebe,29cdc7093d61406a8b23acd07cea11fb,",
+              "value": "203",
+              "label": "村庄",
+              "type": "土地用途",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "a292e838dad94944989706f84a2caebe",
+          "pids": "a292e838dad94944989706f84a2caebe,",
+          "value": "20",
+          "label": "城镇村及工矿用地",
+          "type": "土地用途",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "土地用途",
+      "type": "土地用途",
+      "description": "TDYT",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "e221b25d70734e7b958a222f03a75928",
+      "childrens": [
+        {
+          "id": "4ca7f5c66bca4082a8823a83f1ec5e91",
+          "childrens": null,
+          "pid": "e221b25d70734e7b958a222f03a75928",
+          "pids": "e221b25d70734e7b958a222f03a75928,",
+          "value": "0",
+          "label": "未办",
+          "type": "办理状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2ef6a6d0d66446f28320525a9e60503c",
+          "childrens": null,
+          "pid": "e221b25d70734e7b958a222f03a75928",
+          "pids": "e221b25d70734e7b958a222f03a75928,",
+          "value": "1",
+          "label": "已办",
+          "type": "办理状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "517f63fff47547e2a6204c8d90cb6d6f",
+          "childrens": null,
+          "pid": "e221b25d70734e7b958a222f03a75928",
+          "pids": "e221b25d70734e7b958a222f03a75928,",
+          "value": "2",
+          "label": "在办",
+          "type": "办理状态",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "办理状态",
+      "type": "办理状态",
+      "description": "BLZT",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "baa8748e4e6b41a08b3f5b04e7d88945",
+      "childrens": [
+        {
+          "id": "31f23d07e399438b86cc9736a248ec05",
+          "childrens": [
+            {
+              "id": "6bd33cdb17c642d8a18cbe1182bb94d0",
+              "childrens": [
+                {
+                  "id": "40d33f0fb95046fa9de2475b3f41ddd9",
+                  "childrens": [
+                    {
+                      "id": "db6a5c35893147459cc79fef28a8cfda",
+                      "childrens": null,
+                      "pid": "40d33f0fb95046fa9de2475b3f41ddd9",
+                      "pids": "baa8748e4e6b41a08b3f5b04e7d88945,31f23d07e399438b86cc9736a248ec05,6bd33cdb17c642d8a18cbe1182bb94d0,40d33f0fb95046fa9de2475b3f41ddd9,",
+                      "value": "hongshan",
+                      "label": "洪山区",
+                      "type": "武汉市",
+                      "description": "洪山区",
+                      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+                    }
+                  ],
+                  "pid": "6bd33cdb17c642d8a18cbe1182bb94d0",
+                  "pids": "baa8748e4e6b41a08b3f5b04e7d88945,31f23d07e399438b86cc9736a248ec05,6bd33cdb17c642d8a18cbe1182bb94d0,",
+                  "value": "wuhan",
+                  "label": "武汉市",
+                  "type": "湖北省",
+                  "description": "武汉市",
+                  "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+                }
+              ],
+              "pid": "31f23d07e399438b86cc9736a248ec05",
+              "pids": "baa8748e4e6b41a08b3f5b04e7d88945,31f23d07e399438b86cc9736a248ec05,",
+              "value": "hubei",
+              "label": "湖北省",
+              "type": "中国",
+              "description": "湖北省",
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "d1b7250c31784931b4a0408fb7daff3f",
+              "childrens": [
+                {
+                  "id": "05e46829dbc1429e876b7801c3e5d3a6",
+                  "childrens": null,
+                  "pid": "d1b7250c31784931b4a0408fb7daff3f",
+                  "pids": "baa8748e4e6b41a08b3f5b04e7d88945,31f23d07e399438b86cc9736a248ec05,d1b7250c31784931b4a0408fb7daff3f,",
+                  "value": "shenzhen",
+                  "label": "深圳市",
+                  "type": "广东省",
+                  "description": "深圳市",
+                  "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+                }
+              ],
+              "pid": "31f23d07e399438b86cc9736a248ec05",
+              "pids": "baa8748e4e6b41a08b3f5b04e7d88945,31f23d07e399438b86cc9736a248ec05,",
+              "value": "guangdong",
+              "label": "广东省",
+              "type": "中国",
+              "description": "广东",
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "baa8748e4e6b41a08b3f5b04e7d88945",
+          "pids": "baa8748e4e6b41a08b3f5b04e7d88945,",
+          "value": "china",
+          "label": "中国",
+          "type": "测试级联选择",
+          "description": "中国",
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "测试级联字典",
+      "label": "测试级联字典",
+      "type": "测试级联字典",
+      "description": "测试级联字典",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "7f2e9b46646b432884981fb51ca1cdda",
+      "childrens": [
+        {
+          "id": "72dfdca0f9b2496baa5d077b26ddb580",
+          "childrens": null,
+          "pid": "7f2e9b46646b432884981fb51ca1cdda",
+          "pids": "7f2e9b46646b432884981fb51ca1cdda,",
+          "value": "2",
+          "label": "新建商品房-期房",
+          "type": "模板类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5a3986d6c8f04718ae5b2b91f4666558",
+          "childrens": null,
+          "pid": "7f2e9b46646b432884981fb51ca1cdda",
+          "pids": "7f2e9b46646b432884981fb51ca1cdda,",
+          "value": "3",
+          "label": "存量房买卖",
+          "type": "模板类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "59a37e7a052b40829a61535667110427",
+          "childrens": null,
+          "pid": "7f2e9b46646b432884981fb51ca1cdda",
+          "pids": "7f2e9b46646b432884981fb51ca1cdda,",
+          "value": "4",
+          "label": "存量房委托",
+          "type": "模板类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "99afddd8420b4ebbbbf255b52c972f67",
+          "childrens": null,
+          "pid": "7f2e9b46646b432884981fb51ca1cdda",
+          "pids": "7f2e9b46646b432884981fb51ca1cdda,",
+          "value": "1",
+          "label": "新建商品房-现房",
+          "type": "模板类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": "模板类型",
+      "label": "模板类型",
+      "type": "模板类型",
+      "description": "HTMB",
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "26d0e064ae3e42f681b191985c819e11",
+      "childrens": [
+        {
+          "id": "a907752855864b0e8cacffce054b3834",
+          "childrens": null,
+          "pid": "26d0e064ae3e42f681b191985c819e11",
+          "pids": "26d0e064ae3e42f681b191985c819e11,",
+          "value": "0",
+          "label": "预测",
+          "type": "测绘类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "99eac23898d44436baad650aeb1b5350",
+          "childrens": null,
+          "pid": "26d0e064ae3e42f681b191985c819e11",
+          "pids": "26d0e064ae3e42f681b191985c819e11,",
+          "value": "1",
+          "label": "实测",
+          "type": "测绘类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "测绘类型",
+      "type": "测绘类型",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "4a8257bc4f294dbc88e2de571645ad51",
+      "childrens": [
+        {
+          "id": "4228c8cd10db48f69469c3f78868905e",
+          "childrens": null,
+          "pid": "4a8257bc4f294dbc88e2de571645ad51",
+          "pids": "4a8257bc4f294dbc88e2de571645ad51,",
+          "value": "1",
+          "label": "开发企业",
+          "type": "企业类别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "2b47d05fe5814b3689d7dc8c53feed54",
+          "childrens": null,
+          "pid": "4a8257bc4f294dbc88e2de571645ad51",
+          "pids": "4a8257bc4f294dbc88e2de571645ad51,",
+          "value": "2",
+          "label": "中介机构",
+          "type": "企业类别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "企业类别",
+      "type": "企业类别",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "26d9e5fc9e744db6995c9419398a3548",
+      "childrens": [
+        {
+          "id": "41670fa118a54f1db9d734287e49902e",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "1",
+          "label": "身份证",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "bf32052738414daca6ce89d72246783a",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "2",
+          "label": "港澳台身份证",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "085e69c6a64a4cc8b45648b87eecb8a8",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "3",
+          "label": "护照",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "048a673e5cd1436da04df19688e3bfd3",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "4",
+          "label": "户口本",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "d8c20c212f1a4250b8506b0949f3f60d",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "5",
+          "label": "军官证",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "7f4ee69f6347440a81e1a1b6dce5322c",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "6",
+          "label": "组织机构代码",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "6f847627deef4ac0adf474be28db7e06",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "7",
+          "label": "营业执照",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "3e430a5d316b43fdba88790de59b4b22",
+          "childrens": null,
+          "pid": "26d9e5fc9e744db6995c9419398a3548",
+          "pids": "26d9e5fc9e744db6995c9419398a3548,",
+          "value": "8",
+          "label": "统一社会信用代码",
+          "type": "现售买受人证件类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "现售买受人证件类型",
+      "type": "现售买受人证件类型",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "79cf2b3a9aa947389f3da204fc81aaa5",
+      "childrens": [
+        {
+          "id": "fcc44a592667432ab88c450aa59ea861",
+          "childrens": null,
+          "pid": "79cf2b3a9aa947389f3da204fc81aaa5",
+          "pids": "79cf2b3a9aa947389f3da204fc81aaa5,",
+          "value": "1",
+          "label": "法定代表人",
+          "type": "买受人身份",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "355e399cea18442bad1e8b0a8aaa7844",
+          "childrens": null,
+          "pid": "79cf2b3a9aa947389f3da204fc81aaa5",
+          "pids": "79cf2b3a9aa947389f3da204fc81aaa5,",
+          "value": "2",
+          "label": "负责人",
+          "type": "买受人身份",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "买受人身份",
+      "type": "买受人身份",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "b14958d630494e75bb804b05a62f4b2d",
+      "childrens": [
+        {
+          "id": "8d7559cf42484d909b4680f7af54144e",
+          "childrens": null,
+          "pid": "b14958d630494e75bb804b05a62f4b2d",
+          "pids": "b14958d630494e75bb804b05a62f4b2d,",
+          "value": "1",
+          "label": "男",
+          "type": "性别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "8fe51d7deb1d4a8db2d8c18106580140",
+          "childrens": null,
+          "pid": "b14958d630494e75bb804b05a62f4b2d",
+          "pids": "b14958d630494e75bb804b05a62f4b2d,",
+          "value": "2",
+          "label": "女",
+          "type": "性别",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "性别",
+      "type": "性别",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "bac069a323324f1b90d556f5607bb65c",
+      "childrens": [
+        {
+          "id": "fcb06d2139554c5886845e3a952e9309",
+          "childrens": null,
+          "pid": "bac069a323324f1b90d556f5607bb65c",
+          "pids": "bac069a323324f1b90d556f5607bb65c,",
+          "value": "1",
+          "label": "国籍",
+          "type": "买受人（国籍/户籍）",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "378ee3eb9e4d4cdcade703808803b87e",
+          "childrens": null,
+          "pid": "bac069a323324f1b90d556f5607bb65c",
+          "pids": "bac069a323324f1b90d556f5607bb65c,",
+          "value": "2",
+          "label": "户籍",
+          "type": "买受人（国籍/户籍）",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "买受人（国籍/户籍）",
+      "type": "买受人（国籍/户籍）",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "7411e81cdeb0448fb0fb7a17a5758223",
+      "childrens": [
+        {
+          "id": "adcce60fb85d40ab81d0968e1a6c69e5",
+          "childrens": null,
+          "pid": "7411e81cdeb0448fb0fb7a17a5758223",
+          "pids": "7411e81cdeb0448fb0fb7a17a5758223,",
+          "value": "5",
+          "label": "个人独资",
+          "type": "公司类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "154b8a4874b74a3aa34cfa8dc4f15375",
+          "childrens": null,
+          "pid": "7411e81cdeb0448fb0fb7a17a5758223",
+          "pids": "7411e81cdeb0448fb0fb7a17a5758223,",
+          "value": "1",
+          "label": "普通合伙",
+          "type": "公司类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "397b58f00e724b888d9143d8b695053e",
+          "childrens": null,
+          "pid": "7411e81cdeb0448fb0fb7a17a5758223",
+          "pids": "7411e81cdeb0448fb0fb7a17a5758223,",
+          "value": "2",
+          "label": "有限合伙",
+          "type": "公司类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "e583835f847742708ef3cd4e83882f9c",
+          "childrens": null,
+          "pid": "7411e81cdeb0448fb0fb7a17a5758223",
+          "pids": "7411e81cdeb0448fb0fb7a17a5758223,",
+          "value": "3",
+          "label": "有限责任公司",
+          "type": "公司类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "f6585c4f879e4e76a80ed7eaa762c83f",
+          "childrens": null,
+          "pid": "7411e81cdeb0448fb0fb7a17a5758223",
+          "pids": "7411e81cdeb0448fb0fb7a17a5758223,",
+          "value": "4",
+          "label": "股份公司",
+          "type": "公司类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "公司类型",
+      "type": "公司类型",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    },
+    {
+      "id": "734483a981cc419884fb794d07da6918",
+      "childrens": [
+        {
+          "id": "0aa0a51579504cdc9dca94674ebc1072",
+          "childrens": null,
+          "pid": "734483a981cc419884fb794d07da6918",
+          "pids": "734483a981cc419884fb794d07da6918,",
+          "value": "1",
+          "label": "集体所有制类型",
+          "type": "企业类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "76d6bfeed78948b2bea6f6836eaa0221",
+          "childrens": null,
+          "pid": "734483a981cc419884fb794d07da6918",
+          "pids": "734483a981cc419884fb794d07da6918,",
+          "value": "2",
+          "label": "股份制企业",
+          "type": "企业类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "1b1b9307408744349e7418518b14f8eb",
+          "childrens": null,
+          "pid": "734483a981cc419884fb794d07da6918",
+          "pids": "734483a981cc419884fb794d07da6918,",
+          "value": "3",
+          "label": "联营企业",
+          "type": "企业类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "10e5d107659444128462b423ace40e95",
+          "childrens": null,
+          "pid": "734483a981cc419884fb794d07da6918",
+          "pids": "734483a981cc419884fb794d07da6918,",
+          "value": "4",
+          "label": "个人独资企业",
+          "type": "企业类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "cb7fe9e8042c42efa4bb7993f3dc632e",
+          "childrens": null,
+          "pid": "734483a981cc419884fb794d07da6918",
+          "pids": "734483a981cc419884fb794d07da6918,",
+          "value": "5",
+          "label": "国有类型企业",
+          "type": "企业类型",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        }
+      ],
+      "pid": null,
+      "pids": null,
+      "value": null,
+      "label": "企业类型",
+      "type": "企业类型",
+      "description": null,
+      "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+    }
+  ],
+  "status": "OK",
+  "tokenInvalid": false,
+  "token": null
+}
