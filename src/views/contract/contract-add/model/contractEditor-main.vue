@@ -52,6 +52,7 @@
   //-----------------vue 和 UEditor的集合体
   import VueUeditorWrap from 'vue-ueditor-wrap'
   //-----------------
+  //接口
   import validator from '@/utils/validate';
   //-----------------
   import contractEditorLeftBar from './contractEditor-leftBar';
@@ -62,6 +63,7 @@
     props: {},
     data() {
       return {
+        UEditorConfig: {},
         loading: false, //加载状态
         isEditContract: false, //是否是编辑状态
         validator: validator, //验证
@@ -88,7 +90,8 @@
       contractEditorRightBar
     },
     created() {
-      this.UEditorConfig = CONFIG.UEditorMainConfig;
+      //UEditor初始配置
+      this.UEditorConfig = window.UEditorMainConfig;
       if (process.env.NODE_ENV === 'development') {
         // 不打包时，使用如下配置
         this.UEditorConfig.UEDITOR_HOME_URL = '/UEditor/';
@@ -112,6 +115,7 @@
           this.isEditContract = false;
           //弹框显示
           this.editorDialogVisible = visible;
+          this.$emit('getList');
         };
         if (!visible && data === '关闭弹框') {
           cleanEditor();
@@ -152,14 +156,13 @@
         this.editorInstance = editorInstance;
         //控件双击事件初始化
         this.UEditorInitBtnDoubleClick();
-        let _this = this;
         //编辑器内容变动后自动关闭右侧修改栏
-        editorInstance.addListener('contentChange', function (eObj) {
-          _this.$refs.contractEditorRightBar.updateDrawerVisible(true);
-          if (_this.contractAnchorLinkList.length > 0) {
-            for (let i = 0; i < _this.contractAnchorLinkList.length; i++) {
-              if (!editorInstance.getContent().includes(_this.contractAnchorLinkList[i].id)) {
-                _this.contractAnchorLinkList.splice(i, 1);
+        editorInstance.addListener('contentChange', () => {
+          this.$refs.contractEditorRightBar.updateDrawerVisible(true);
+          if (this.contractAnchorLinkList.length > 0) {
+            for (let i = 0; i < this.contractAnchorLinkList.length; i++) {
+              if (!editorInstance.getContent().includes(this.contractAnchorLinkList[i].id)) {
+                this.contractAnchorLinkList.splice(i, 1);
               }
             }
           }
@@ -167,8 +170,7 @@
       },
       //UEditor初始化加入几大按钮
       UEditorAddCustomButton(editorId) {
-        let _this = this;
-        window.UE.registerUI('addInputBtn addSelectBtn addTextareaBtn addCrrListBtn addMsrListBtn', function (editor, uiName) {
+        window.UE.registerUI('addInputBtn addSelectBtn addTextareaBtn addFqxxBtn addSpfCmrBtn addClfCmrBtn addMsrBtn addJjfsBtn', (editor, uiName) => {
           // 创建一个 button
           let btn;
           switch (uiName) {
@@ -180,15 +182,15 @@
                 title: '在指针处添加一个input控件',
                 className: 'inputBtn',
                 // 点击时执行的命令
-                onclick: function () {
+                onclick: () => {
                   // 这里可以不用执行命令，做你自己的操作也可
-                  let randomId = _this.getRandomNum();
-                  let randomModel = _this.getRandomNum();
+                  let randomId = this.getRandomNum();
+                  let randomModel = this.getRandomNum();
                   if (randomId && randomModel) {
                     let ids = 'I' + randomId;
                     let models = 'form.randomValue' + randomModel;
-                    editor.execCommand('inserthtml', `<input type="text" class="UEditorInput" id="${ids}" v-model="${models}" bind-model="" read-model="" style="width: 50px;height: 20px" placeholder="" validator="" valueLength="20" />`);
-                    _this.$message.success('成功添加了一个Input控件！');
+                    editor.execCommand('inserthtml', `<input type="text" class="UEditorInput" id="${ids}" v-model="${models}" bind-model="" read-model="" style="width: 50px;height: 20px" placeholder="" validator="" valueLength="20" capitalize="0" />`);
+                    // this.$message.success('成功添加了一个Input控件！');
                   }
                 }
               });
@@ -201,15 +203,15 @@
                 title: '在指针处添加一个select控件',
                 className: 'selectBtn',
                 // 点击时执行的命令
-                onclick: function () {
+                onclick: () => {
                   // 这里可以不用执行命令，做你自己的操作也可
-                  let randomId = _this.getRandomNum();
-                  let randomModel = _this.getRandomNum();
+                  let randomId = this.getRandomNum();
+                  let randomModel = this.getRandomNum();
                   if (randomId && randomModel) {
                     let ids = 'S' + randomId;
                     let models = 'form.randomValue' + randomModel;
                     editor.execCommand('inserthtml', `<select class="UEditorSelect" id="${ids}" v-model="${models}" bind-model="" read-model="" style="width: 100px;height: 26px"></select>`);
-                    _this.$message.success('成功添加了一个Select控件！');
+                    // this.$message.success('成功添加了一个Select控件！');
                   }
                 }
               });
@@ -222,64 +224,181 @@
                 title: '在指针处添加一个textarea控件',
                 className: 'textareaBtn',
                 // 点击时执行的命令
-                onclick: function () {
+                onclick: () => {
                   // 这里可以不用执行命令，做你自己的操作也可
-                  let randomId = _this.getRandomNum();
-                  let randomModel = _this.getRandomNum();
+                  let randomId = this.getRandomNum();
+                  let randomModel = this.getRandomNum();
                   if (randomId && randomModel) {
                     let ids = 'T' + randomId;
                     let models = 'form.randomValue' + randomModel;
                     editor.execCommand('inserthtml', `<textarea class="UEditorTextarea" id="${ids}" v-model="${models}" bind-model="" read-model="" style="width: 200px;height: 50px;resize: both;display: block" placeholder="" validator="" valueLength="200"></textarea>`);
-                    _this.$message.success('成功添加了一个Textarea控件！');
+                    // this.$message.success('成功添加了一个Textarea控件！');
                   }
                 }
               });
               break;
-            case 'addCrrListBtn':
+            case 'addFqxxBtn':
               btn = new window.UE.ui.Button({
                 // 按钮的名字
                 name: uiName,
                 // 提示
-                title: '在指针处添加一个出卖人列表控件',
-                className: 'crrListBtn',
+                title: '在指针处添加一个分期信息展示区域控件',
+                className: 'fqxxBtn',
                 // 点击时执行的命令
-                onclick: function () {
-                  if (_this.UEditorInitMsg.includes('*****出卖人列表开始')) {
-                    _this.$message.warning('您已经添加了一个出卖人列表控件，无法重复添加！');
+                onclick: () => {
+                  if (this.UEditorInitMsg.includes('分期信息展示区域开始*****')) {
+                    this.$message.warning('您已经添加了一个分期信息展示区域控件，无法重复添加！');
                     return false;
                   }
+                  let html = `
+                  <p>*****勿删，分期信息展示区域开始*****</p>
+                  <p>1。一次性付款。买受人应当在_____前支付该商品房全部价款</p>
+                  <p>2。分期付款。买受人应当在_____前分_____期支付改商品房全部价款，首期房价款_____（币种）_____元（大写：_____元整），应当与前支付。</p>
+                  <p>3。贷款方式付款：_____。买受人应当于_____前支付首期房价款_____（币种）_____元（大写：_____元整），占全部房价款的_____%</p>
+                  <p>3。其他方式：________________________</p>
+                  <p>*****勿删，分期信息展示区域结束*****</p>
+                  `;
                   // 这里可以不用执行命令，做你自己的操作也可
-                  editor.execCommand('inserthtml', `<p><label cmrListStart>*****出卖人列表开始*****</label></p>
-<p>《《《请在当前行插入出卖人信息》》》</p>
-<p><label cmrListEnd>*****出卖人列表结束*****</label></p>`);
-                    _this.$message.success('成功添加出卖人列表控件！');
+                  editor.execCommand('inserthtml', html);
                 }
               });
               break;
-            case 'addMsrListBtn':
+            case 'addSpfCmrBtn': // 商品房出卖人
               btn = new window.UE.ui.Button({
                 // 按钮的名字
                 name: uiName,
                 // 提示
-                title: '在指针处添加一个买受人列表控件',
-                className: 'msrListBtn',
+                title: '在指针处添加一个商品房流程出卖人信息展示区域控件',
+                className: 'spfCmrBtn',
                 // 点击时执行的命令
-                onclick: function () {
-                  if (_this.UEditorInitMsg.includes('*****买受人列表开始')) {
-                    _this.$message.warning('您已经添加了一个出卖人列表，无法重复添加！');
+                onclick: () => {
+                  if (this.UEditorInitMsg.includes('商品房流程-出卖人信息展示区域开始*****')) {
+                    this.$message.warning('您已经添加了一个商品房流程-出卖人信息控件，无法重复添加！');
                     return false;
                   }
+                  let html = `
+                     <p>*****勿删，商品房流程-出卖人信息展示区域开始*****</p>
+                     <p>出卖人：___________________________________________________________</p>
+                     <p>通讯地址：__________________________________________________________</p>
+                     <p>邮政编码：_________________________________________________________</p>
+                     <p>营业执照注册号：_____________________________________________________</p>
+                     <p>企业资质证书号：_____________________________________________________</p>
+                     <p>法定代理人：________________________联系电话：________________________</p>
+                     <p>委托代理人：________________________联系电话：________________________</p>
+                     <p>委托销售经纪机构：___________________________________________________</p>
+                     <p>通讯地址：_________________________________________________________</p>
+                     <p>邮政编码：_________________________________________________________</p>
+                     <p>营业执照注册号：____________________________________________________</p>
+                     <p>经济机构备案证明号：__________________________________________________</p>
+                     <p>法定代表人：________________________联系电话：________________________</p>
+                     <p>*****勿删，商品房流程-出卖人信息展示区域结束*****</p>
+                  `;
                   // 这里可以不用执行命令，做你自己的操作也可
-                  editor.execCommand('inserthtml', `<p><label msrListStart>*****买受人列表开始*****</label></p>
-<p>《《《请在当前行插入买受人信息》》》</p>
-<p><label msrListEnd>*****买受人列表结束*****</label></p>`);
-                    _this.$message.success('成功添加买受人列表控件！');
+                  editor.execCommand('inserthtml', html);
+                }
+              });
+              break;
+            case 'addClfCmrBtn': // 存量房出卖人
+              btn = new window.UE.ui.Button({
+                // 按钮的名字
+                name: uiName,
+                // 提示
+                title: '在指针处添加一个存量房流程出卖人信息展示区域控件',
+                className: 'clfCmrBtn',
+                // 点击时执行的命令
+                onclick: () => {
+                  if (this.UEditorInitMsg.includes('存量房流程-出卖人信息展示区域开始*****')) {
+                    this.$message.warning('您已经添加了一个存量房流程-出卖人信息控件，无法重复添加！');
+                    return false;
+                  }
+                  let html = `
+                     <p>*****勿删，存量房流程-出卖人信息展示区域开始*****</p>
+                     <p>没有最新的合同！！！！！！！！以下为商品房的人格式</p>
+                     <p>出卖人：___________________________________________________________</p>
+                     <p>通讯地址：__________________________________________________________</p>
+                     <p>邮政编码：_________________________________________________________</p>
+                     <p>营业执照注册号：_____________________________________________________</p>
+                     <p>企业资质证书号：_____________________________________________________</p>
+                     <p>法定代理人：________________________联系电话：________________________</p>
+                     <p>委托代理人：________________________联系电话：________________________</p>
+                     <p>委托销售经纪机构：___________________________________________________</p>
+                     <p>通讯地址：_________________________________________________________</p>
+                     <p>邮政编码：_________________________________________________________</p>
+                     <p>营业执照注册号：____________________________________________________</p>
+                     <p>经济机构备案证明号：__________________________________________________</p>
+                     <p>法定代表人：________________________联系电话：________________________</p>
+                     <p>*****勿删，存量房流程-出卖人信息展示区域结束*****</p>
+                  `;
+                  // 这里可以不用执行命令，做你自己的操作也可
+                  editor.execCommand('inserthtml', html);
+                }
+              });
+              break;
+            case 'addMsrBtn': // 买受人一样
+              btn = new window.UE.ui.Button({
+                // 按钮的名字
+                name: uiName,
+                // 提示
+                title: '在指针处添加一个买受人信息展示区域控件',
+                className: 'msrBtn',
+                // 点击时执行的命令
+                onclick: () => {
+                  if (this.UEditorInitMsg.includes('买受人信息展示区域开始*****')) {
+                    this.$message.warning('您已经添加了一个买受人信息展示区域控件，无法重复添加！');
+                    return false;
+                  }
+                  let html = `
+                     <p>*****勿删，买受人信息展示区域开始*****</p>
+                     <p>买受人：_________________________________________________________</p>
+                     <p>[法定代表人][负责人]：_____________________________________________</p>
+                     <p>[国籍][户籍所在地]：_______________________________________________</p>
+                     <p>[证件类型]：[居民身份证][护照][营业执照]：[____]，证号：_____________</p>
+                     <p>出生日期：_____________________________，性别：____________________</p>
+                     <p>通讯地址：_______________________________________________________</p>
+                     <p>邮政编码：________________________联系电话：________________________</p>
+                     <p>[委托代理人][法定代理人]：__________________________________________</p>
+                     <p>[国籍][户籍所在地]：_______________________________________________</p>
+                     <p>[证件类型]：[居民身份证][护照][营业执照]：[____]，证号：_____________</p>
+                     <p>出生日期：_____________________________，性别：____________________</p>
+                     <p>通讯地址：________________________________________________________</p>
+                     <p>邮政编码：________________________联系电话：________________________</p>
+                     <p>*****勿删，买受人信息展示区域结束*****</p>
+                  `;
+                  // 这里可以不用执行命令，做你自己的操作也可
+                  editor.execCommand('inserthtml', html);
+                }
+              });
+              break;
+            case 'addJjfsBtn':
+              btn = new window.UE.ui.Button({
+                // 按钮的名字
+                name: uiName,
+                // 提示
+                title: '在指针处添加一个计价方式信息展示区域控件',
+                className: 'jjfsBtn',
+                // 点击时执行的命令
+                onclick: () => {
+                  if (this.UEditorInitMsg.includes('计价方式信息展示区域开始*****')) {
+                    this.$message.warning('您已经添加了一个计价方式信息展示区域控件，无法重复添加！');
+                    return false;
+                  }
+                  let html = `
+                  <p>*****勿删，计价方式信息展示区域开始*****</p>
+                  <p>出卖人与买受人按照下列第___种方式计算该商品房价款</p>
+                  <p>1。按照套内建筑面积计算，该商品房单价为每平方米_____（币种）_____元，总价款为_____（币种）_____元（大写_____元整）。</p>
+                  <p>2。按照建筑面积计算，该商品房单价为每平方米_____（币种）_____元，总价款为_____（币种）_____元（大写_____元整）。</p>
+                  <p>3。按照套计算，该商品房总价款为_____（币种）_____元（大写_____元整）。</p>
+                  <p>4。按照_____计算，该商品房总价款为_____（币种）_____元（大写_____元整）。</p>
+                  <p>*****勿删，计价方式信息展示区域结束*****</p>
+                  `;
+                  // 这里可以不用执行命令，做你自己的操作也可
+                  editor.execCommand('inserthtml', html);
                 }
               });
               break;
           }
           // 当点到编辑内容上时，按钮要做的状态反射
-          editor.addListener('selectionchange', function () {
+          editor.addListener('selectionchange', () => {
             var state = editor.queryCommandState(uiName);
             if (state === -1) {
               btn.setDisabled(true);
@@ -296,7 +415,6 @@
       //UEditor自定义控件加入双击事件
       UEditorInitBtnDoubleClick() {
         //处理不同frame的情况
-        let _this = this;
         for (let i = 0; i < 100; i++) {
           if (document.getElementById('ueditor_' + i) !== null) {
             this.frame = document.getElementById('ueditor_' + i).contentWindow;
@@ -307,16 +425,20 @@
             break;
           }
         }
+        //优化iframe内部的滚动条样式，避免影响间距
+        this.frame.document.styleSheets[0].insertRule('body::-webkit-scrollbar-track-piece { background: #d3dce6 }', 0);
+        this.frame.document.styleSheets[0].insertRule('body::-webkit-scrollbar { width: 1px }', 0);
+        this.frame.document.styleSheets[0].insertRule('body::-webkit-scrollbar-thumb { background: #99a9bf }', 0);
         //双击触发修改事件
-        this.frame.addEventListener("dblclick", function (eObj) {
+        this.frame.addEventListener("dblclick", (eObj) => {
           //获取选定的dom
           let node = eObj.srcElement || eObj.target;
-          let nodeDom = _this.frame.document.getElementById(node.id);
+          let nodeDom = this.frame.document.getElementById(node.id);
           //判断是否是dom元素
           if (nodeDom) {
             switch (node.nodeName.toLowerCase()) {
               case 'input':
-                _this.openUpdateDrawer('inputDrawer', {
+                this.openUpdateDrawer('inputDrawer', {
                   id: node.id,
                   type: node.type,
                   className: node.className,
@@ -326,7 +448,8 @@
                   readModel: nodeDom.getAttribute('read-model'),
                   placeholder: node.placeholder,
                   validator: nodeDom.getAttribute('validator'),
-                  valueLength: nodeDom.getAttribute('valueLength')
+                  valueLength: nodeDom.getAttribute('valueLength'),
+                  capitalize: nodeDom.getAttribute('capitalize')
                 });
                 break;
               case 'select':
@@ -338,7 +461,7 @@
                 if (optionList.length !== 0) {
                   isDicSelect = false;
                 }
-                _this.openUpdateDrawer('selectDrawer', {
+                this.openUpdateDrawer('selectDrawer', {
                   id: node.id,
                   className: node.className,
                   width: node.style.width,
@@ -349,10 +472,10 @@
                   optionList: optionList,
                   isDicSelect: isDicSelect
                 });
-                _this.oldOptionList = optionList;
+                this.oldOptionList = optionList;
                 break;
               case 'textarea':
-                _this.openUpdateDrawer('textareaDrawer', {
+                this.openUpdateDrawer('textareaDrawer', {
                   id: node.id,
                   className: node.className,
                   width: node.style.width,
@@ -384,14 +507,14 @@
             };
             let parentNode = getParent(node);
             if (!parentNode) {
-              _this.$refs.contractEditorRightBar.updateDrawerVisible(false);
+              this.$refs.contractEditorRightBar.updateDrawerVisible(false);
               return false;
             }
             let isAnchorLink = false;
             //判断是否存在锚点链接
             if (parentNode.getElementsByTagName('label').length > 0) {
               isAnchorLink = true;
-              _this.openUpdateDrawer('pDrawer', {
+              this.openUpdateDrawer('pDrawer', {
                 isPId: true,
                 outerHTML: parentNode.outerHTML,
                 innerText: parentNode.innerText,
@@ -399,20 +522,21 @@
                 anchorLinkId: parentNode.getElementsByTagName('label')[0].id
               });
             } else {
-              _this.openUpdateDrawer('pDrawer', {
+              this.openUpdateDrawer('pDrawer', {
                 isPId: true,
                 outerHTML: parentNode.outerHTML,
                 innerText: parentNode.innerText,
                 isAnchorLink: isAnchorLink
               });
             }
-            _this.savePDrawerDocument(parentNode);
+            this.savePDrawerDocument(parentNode);
           }
         });
       },
       //------------------------------------
       //打开双击修改的抽屉
       openUpdateDrawer(drawerType, drawerInitData) {
+        console.log(drawerInitData);
         this.$refs.contractEditorRightBar.openUpdateDrawer(false, drawerType, drawerInitData);
       },
       //获取抽屉的更新数据并更新给html
@@ -453,11 +577,10 @@
           return false;
         }
         //执行非行内修改
-        let _this = this;
         let byIdDocument = this.frame.document.getElementById(dataObj.updateData.id);
         if (dataObj.updateData) {
           //统一更新
-          Object.getOwnPropertyNames(dataObj.updateData).forEach(function (key) {
+          Object.getOwnPropertyNames(dataObj.updateData).forEach((key) => {
             switch (key) {
               case  'type':
                 byIdDocument.setAttribute('type', dataObj.updateData[key]);
@@ -479,7 +602,7 @@
                 if (dataObj.updateData[key] !== '') {
                   modelValue = dataObj.updateData[key]
                 } else {
-                  randomModel = _this.getRandomNum();
+                  randomModel = this.getRandomNum();
                   if (randomModel) {
                     modelValue = 'randomValue' + randomModel;
                   }
@@ -509,6 +632,9 @@
               case 'valueLength':
                 byIdDocument.setAttribute('valueLength', dataObj.updateData[key]);
                 break;
+              case 'capitalize':
+                byIdDocument.setAttribute('capitalize', dataObj.updateData[key]);
+                break;
             }
           });
         }
@@ -526,8 +652,11 @@
           this.$message.warning('请输入合同内容！');
           return false;
         }
-        this.$refs.contractEditorPreview.initContractPreviewDialog(visible, {
+        let contractTermsBo = {
           tk: this.UEditorInitMsg
+        };
+        this.$refs.contractEditorPreview.initContractPreviewDialog(visible, {
+          contractTermsBo
         }, 'contractView');
       },
       //----
@@ -548,14 +677,8 @@
             return false;
           }
           if (valid && this.contractModelSaved) {
-            this.$emit('saveContract', {
-              mbmc: this.contractModelData.modelName,
-              mblx: this.contractModelData.modelType,
-              createPeople: 'wupeng',
-              createTime: '2019.11',
-              tk: this.UEditorInitMsg,
-              zstk: this.editorInstance.getAllHtml().replace(/[\r\n]/g, "")
-            })
+            this.loading = true;
+            alert('保存')
           } else {
             this.$message.warning('请输入合同模板基本信息！');
           }
@@ -577,18 +700,4 @@
 </script>
 
 <style lang="scss" scoped>
-  /deep/ .el-dialog__header{
-    background: none;
-    padding: 20px 20px 10px;
-    text-align: left;
-  }
-  /deep/ .el-dialog__title{
-    color: #303133;
-  }
-  /deep/ .el-dialog__headerbtn{
-    top: 20px;
-    .el-dialog__close{
-      color: #909399;
-    }
-  }
 </style>

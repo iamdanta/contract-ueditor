@@ -1,0 +1,393 @@
+//本样式为合同模板样式
+.contractEditorDialog {
+  height: 100%;
+
+  .el-dialog {
+    background-color: #f5f5f5;
+
+    .el-dialog__title {
+      color: #303133;
+    }
+
+    .el-dialog__header {
+      background: #fff;
+      padding: 20px 20px 10px;
+      text-align: left;
+    }
+
+    .el-dialog__body {
+      height: calc(100% - 54px);
+      padding: 15px 20px;
+    }
+
+    .el-dialog__headerbtn {
+      top: 20px;
+
+      .el-dialog__close {
+        color: #909399;
+      }
+    }
+
+    .contractEditorRow {
+      overflow: hidden;
+
+      .leftBar {
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: auto;
+
+        .leftBarAuthor {
+          p.title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #333333;
+            margin: 20px 0 20px;
+
+            i {
+              wr: #fff;
+              margin-right: 10px;
+              background-color: #0E90FE;
+              border-radius: 50%;
+              font-size: 13px;
+              padding: 1.5px;
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            li {
+              transition: all .5s;
+              height: 33px;
+              margin: 10px 0;
+              list-style: none;
+              line-height: 30px;
+              color: #333333;
+              border: 1px solid #d2d2d2;
+
+              .el-row {
+                height: 100%;
+                width: 100%;
+
+                .el-col {
+                  height: 100%;
+                  line-height: 33px;
+                }
+
+                .anchorLink {
+                  background-color: #53B478;
+
+                  i {
+                    margin-left: 5px;
+                    font-size: 18px;
+                    color: #fff;
+                  }
+
+                  span {
+                    color: #fff;
+                    padding: 0 10px;
+                  }
+                }
+
+                .goAnchorLink {
+                  cursor: pointer;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+
+                  span {
+                    margin-left: 10px;
+                  }
+                }
+
+                .authorDelete {
+                  text-align: right;
+
+                  i {
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: .5s opacity;
+                  }
+                }
+
+                &:hover {
+                  i {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .centerBar {
+        .UEditorBody {
+          height: 100% !important;
+
+          > div:nth-child(1) {
+            height: 100% !important;
+          }
+        }
+
+        .edui-default .edui-editor {
+          //border: 0 !important;
+        }
+
+        .edui-state-hover {
+          .edui-button-wrap {
+            background-color: transparent !important;
+          }
+        }
+
+        .edui-editor {
+          height: 100% !important;
+          background-color: #d7d7d7 !important;
+
+          .edui-editor-toolbarboxouter {
+            background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+            border: none;
+          }
+
+          .edui-editor-iframeholder {
+            height: calc(100% - 100px) !important;
+            width: 660px !important;
+            margin: 30px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+            padding: 30px 60px 30px;
+
+            iframe {
+              i, em {
+                background-color: #ccc;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+
+          .edui-editor-bottomContainer {
+            background-color: #fff !important;
+          }
+        }
+
+        //新增按钮
+        .inputBtn {
+          background: url('../assets/images/contract-management/input.png') center no-repeat;
+          background-size: 80%;
+          width: 100px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .selectBtn {
+          background: url('../assets/images/contract-management/select.png') center no-repeat;
+          background-size: 80%;
+          width: 110px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .textareaBtn {
+          background: url('../assets/images/contract-management/textarea.png') center no-repeat;
+          background-size: 80%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .fqxxBtn {
+          background: url('../assets/images/contract-management/fqxx.png') center no-repeat;
+          background-size: 60%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .spfCmrBtn {
+          background: url('../assets/images/contract-management/spfcmr.png') center no-repeat;
+          background-size: 85%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .clfCmrBtn {
+          background: url('../assets/images/contract-management/clfcmr.png') center no-repeat;
+          background-size: 85%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .msrBtn {
+          background: url('../assets/images/contract-management/msr.png') center no-repeat;
+          background-size: 53%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+
+        .jjfsBtn {
+          background: url('../assets/images/contract-management/jjfs.png') center no-repeat;
+          background-size: 60%;
+          width: 130px;
+          margin-right: 5px;
+
+          .edui-box.edui-icon {
+            background-image: none;
+          }
+        }
+      }
+
+      .rightBar {
+        background-color: #fff;
+        height: 100%;
+        border-radius: 4px;
+        overflow: auto;
+        padding-bottom: 20px;
+
+        h2 {
+          margin: 20px 0 20px;
+        }
+
+        p.title {
+          font-size: 17px;
+          font-weight: bold;
+          color: #333333;
+          margin: 20px 0 20px;
+
+          i {
+            color: #0E90FE;
+            margin-right: 10px;
+          }
+        }
+
+        li {
+          font-weight: 400;
+          color: #333333;
+          line-height: 20px;
+          margin: 20px 20px;
+        }
+
+        .el-input-number {
+          width: 100%;
+        }
+
+        .selectOptionAdd {
+          .el-input {
+            margin-right: 10px;
+          }
+
+          .el-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+          //display: flex;
+        }
+
+        .drawerTips {
+          margin: 20px 0;
+
+          i {
+            color: red
+          }
+
+          span {
+            color: red;
+            font-weight: bold;
+          }
+        }
+
+        .selectOptionList {
+          padding: 5px;
+          border: 1px solid #d4d4d4;
+          height: 90px;
+          overflow: auto;
+          margin-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          border-radius: 4px;
+
+          p {
+            min-width: 30px;
+            height: 20px;
+            margin: 5px 5px;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #ccc;
+
+            i {
+              color: red;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .drawer-footer {
+          text-align: center;
+        }
+
+        //多重验证选择框
+        .el-tag.el-tag--info {
+          color: red;
+          font-weight: bold;
+        }
+
+        //随机绑定框
+        .el-switch__label.is-active {
+          color: red;
+          font-weight: bold;
+        }
+
+        //随机字段的过渡动画
+        .randomValueInput {
+          transition: all 0.5s;
+        }
+      }
+    }
+
+    .contractEditorFooter {
+      position: absolute;
+      top: 7px;
+      right: 20px;
+
+      .contractEditorFooterForm {
+        line-height: 40px;
+
+        .el-form-item {
+          margin-right: 0;
+
+          .el-form-item__error {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

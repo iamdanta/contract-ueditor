@@ -255,6 +255,154 @@ const validate = {
       }
     }
   },
+  //不必填，但是需要验证
+  noNeedRequire: {
+    required: false,
+    trigger: ['blur']
+  },
+  // 护照
+  Passport: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const reg = /^[a-zA-Z0-9]{3,21}$/;
+      if (reg.test(value)) {
+        callback();
+      } else {
+        return callback(new Error('请输入正确的护照格式'));
+      }
+    }
+  },
+  // 户口薄
+  Household: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const reg = /^[a-zA-Z0-9]{3,21}$/;
+      if (reg.test(value)) {
+        callback();
+      } else {
+        return callback(new Error('请输入正确的户口簿格式'));
+      }
+    }
+  },
+  // 军官证
+  Officer: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const reg = /^[a-zA-Z0-9]{7,21}$/;
+      if (reg.test(value)) {
+        callback();
+      } else {
+        return callback(new Error('请输入正确的军官证格式'));
+      }
+    }
+  },
+  // 组织机构代码
+  OrganizationCode: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      let ws = [3, 7, 9, 10, 5, 8, 4, 2];
+      let str = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let reg = /^([0-9A-Z]){8}$/;
+      if (!reg.test(value)) {
+        return callback(new Error('请输入正确的组织机构代码格式'));
+      }
+      let sum = 0;
+      for (let i = 0; i < 8; i++) {
+        sum += str.indexOf(value.charAt(i)) * ws[i];
+      }
+      let c9 = 11 - (sum % 11);
+      if (c9 == 10) {
+        c9 = 'X';
+      } else if (c9 == 11) {
+        c9 = '0';
+      }
+      if (c9 !== value.charAt(9)) {
+        return callback(new Error('请输入正确的组织机构代码格式'));
+      } else {
+        callback();
+      }
+    }
+  },
+  // 统一社会信用代码
+  SocialCreditCode: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const partn = /^[0-9A-Z]+$/;
+      if (value.length !== 18 || partn.test(value) === false) {
+        return callback(new Error('不是有效的统一社会信用编码'));
+      } else {
+        let Ancode; //统一社会信用代码的每一个值
+        let Ancodevalue; //统一社会信用代码每一个值的权重
+        let total = 0;
+        let weightedfactors = [
+          1,
+          3,
+          9,
+          27,
+          19,
+          26,
+          16,
+          17,
+          20,
+          29,
+          25,
+          13,
+          8,
+          24,
+          10,
+          30,
+          28
+        ]; //加权因子
+        let str = '0123456789ABCDEFGHJKLMNPQRTUWXY';
+        //不用I、O、S、V、Z
+        for (let i = 0; i < value.length - 1; i++) {
+          Ancode = value.substring(i, i + 1);
+          Ancodevalue = str.indexOf(Ancode);
+          total = total + Ancodevalue * weightedfactors[i];
+          //权重与加权因子相乘之和
+        }
+        let logiccheckcode = 31 - (total % 31);
+        if (logiccheckcode == 31) {
+          logiccheckcode = 0;
+        }
+        let Str =
+          '0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,T,U,W,X,Y';
+        let Array_Str = Str.split(',');
+        logiccheckcode = Array_Str[logiccheckcode];
+
+        let checkcode = value.substring(17, 18);
+        if (logiccheckcode != checkcode) {
+          return callback(new Error('不是有效的统一社会信用编码'));
+        } else {
+          callback();
+        }
+      }
+    }
+  },
+  // 营业执照
+  Businesslicense: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const reg = /(^(?:(?![IOZSV])[\dA-Z]){2}\d{6}(?:(?![IOZSV])[\dA-Z]){10}$)|(^\d{15}$)/;
+      if (reg.test(value)) {
+        callback();
+      } else {
+        return callback(new Error('请输入正确的营业执照格式'));
+      }
+    }
+  },
   // 汉字加字字母
   normalchar: {
     validator: (rule, value, callback) => {
@@ -285,6 +433,20 @@ const validate = {
         callback();
       } else {
         return callback(new Error('只能是数字'));
+      }
+    }
+  },
+  // 邮政编码
+  postalCode: {
+    validator: (rule, value, callback) => {
+      if (!value) {
+        callback();
+      }
+      const reg = /^[1-9][0-9]{5}$/;
+      if (reg.test(value)) {
+        callback();
+      } else {
+        return callback(new Error('请输入正确的邮政编码'));
       }
     }
   },

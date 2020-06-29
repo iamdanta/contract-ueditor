@@ -1,9 +1,11 @@
 <template>
-  <h2>11111</h2>
+   <h2>21313</h2>
 </template>
 
 <script>
-export default {};
+  export default {
+
+  };
 </script>
 
 <style scoped lang="less"></style>

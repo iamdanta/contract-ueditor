@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="leftBarAuthor">
-      <h2>自定义锚点</h2>
+      <p class="title"><i class="el-icon-collection-tag"></i>自定义锚点</p>
       <transition-group name="list-complete" tag="ul">
         <li v-for="(item, index) in contractAnchorLinkList" :key="item.id">
           <el-row>
-            <el-col :span="9" class="anchorLink"><span><i class="el-icon-paperclip"></i> {{index + 1}}</span>
+            <el-col :span="6" class="anchorLink"><i class="el-icon-collection"></i> <span>{{index + 1}}</span>
             </el-col>
-            <el-col :span="12" class="goAnchorLink"><span @click="jumpAnchorLink(item)">{{item.name}}</span>
+            <el-col :span="15" class="goAnchorLink"><span @click="jumpAnchorLink(item)">{{item.name}}</span>
             </el-col>
             <el-col :span="3" class="authorDelete"><i class="el-icon-circle-close"
                                                       @click="deleteAnchorLink(item)"></i></el-col>

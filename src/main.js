@@ -9,6 +9,8 @@ import './plugins/element.js';
 
 // 样式
 import './styles/index.scss';
+//编辑器样式
+import './styles/UEditorStyle.scss';
 import './styles/UEStyle.scss';
 
 import '@/components'

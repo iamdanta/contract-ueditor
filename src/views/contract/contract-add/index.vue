@@ -37,7 +37,7 @@
                 <el-button size="mini" type="text" @click="popoverVisible = false">不删除</el-button>
                 <el-button type="primary" size="mini" @click="deleteContract(row.id - 1, row)">删除</el-button>
               </div>
-              <el-button type="text" size="small" slot="reference">删除</el-button>
+              <el-button type="text" size="small" slot="reference"> 删除</el-button>
             </el-popover>
           </template>
         </el-table-column>
@@ -74,7 +74,7 @@
         this.$refs.contractEditorMain.mainDialogVisible(true);
       },
       viewContract(row) {
-        this.$refs.contractEditorPreview.initContractPreviewDialog(true, {tk: row.tk}, 'contractView');
+        this.$refs.contractEditorPreview.initContractPreviewDialog(true, { tk: row.tk }, 'contractView');
       },
       editContract(row) {
         this.$refs.contractEditorMain.mainDialogVisible(true, row);
@@ -88,10 +88,14 @@
         }
       },
       //保存编辑器给的数据
-      saveContract(data) {
+      saveContract(data, doWhat) {
         if (data) {
-          data.id = this.tableData.length + 1;
-          this.tableData.push(data);
+          if (doWhat === 'add') {
+            data.id = this.tableData.length + 1;
+            this.tableData.push(data);
+          } else if (doWhat === 'update') {
+            this.tableData[data.id - 1] = data;
+          }
         }
       }
     }

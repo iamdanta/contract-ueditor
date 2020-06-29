@@ -2,18 +2,24 @@
   <div>
     <transition name="spread-in" mode="out-in">
       <div v-if="showTips" key="showTips">
-        <h2>新增模板提示：</h2>
+        <p class="title"><i class="el-icon-info"></i>新增模板提示</p>
+        <p>注意：</p>
         <ol>
-          <li>为了更好的打印效果，模板字体建议默认不低于16px</li>
-          <li><span style="color: red;font-weight: bold">单击HTML按钮</span>查看对应代码</li>
-          <li><span style="color: red;font-weight: bold">单击预览</span>查看模板渲染</li>
-          <li><span style="color: red;font-weight: bold">单击控件按钮</span>添加控件至光标处
+          <li>为了更好的打印效果，模板字体请手动控制，默认16px，建议<span class="tips">手动调整打印页边距</span></li>
+          <li><span class="tips">请不要绑定不需要存库的值</span>，否则前端报错渲染失败</li>
+          <li><span class="tips">请不要随意改动模板控件值</span>，否则前端报错渲染失败</li>
+        </ol>
+        <p>操作：</p>
+        <ol>
+          <li><span class="tips">单击HTML按钮</span>查看对应代码</li>
+          <li><span class="tips">单击预览</span>查看模板渲染</li>
+          <li><span class="tips">单击任意控件按钮</span>添加指定控件至光标处
           </li>
-          <li><span style="color: red;font-weight: bold">双击控件</span>修改控件配置属性与参数</li>
-          <li><span style="color: red;font-weight: bold">双击任意行</span>可设置<span style="color: red;font-weight: bold">锚点跳转链接</span>
+          <li><span class="tips">双击输入类型控件</span>修改控件配置属性与参数</li>
+          <li><span class="tips">双击任意行</span>可设置<span class="tips">锚点跳转链接</span>
           </li>
-          <li><span style="color: red;font-weight: bold">单击锚点按钮</span>跳转文档对应位置</li>
-          <li>如需添加权利人请使用权利人控件，但请<span style="color: red;font-weight: bold">不要</span>在控件中加入另一个权利人控件</li>
+          <li><span class="tips">单击锚点按钮</span>跳转文档对应位置</li>
+          <li>配置中<span class="tips">数值自动转大写</span>需要绑定至少两个输入框为同一绑定值</li>
         </ol>
       </div>
       <div v-if="!showTips" key="noShowTips">
@@ -62,6 +68,16 @@
               </el-form-item>
               <el-form-item label="限制输入长度">
                 <el-input v-model="drawerFormData.valueLength" placeholder="不填默认为：20"></el-input>
+              </el-form-item>
+              <el-form-item label="数值自动大写">
+                <p>如需前一个框输入数值这个框自动转大写，请勾选</p>
+                <el-switch
+                  v-model="drawerFormData.capitalize"
+                  active-text="转"
+                  inactive-text="不转"
+                  active-value="1"
+                  inactive-value="0">
+                </el-switch>
               </el-form-item>
               <div class="drawer-footer">
                 <el-button @click="drawerVisible(false)">取 消</el-button>
@@ -203,7 +219,7 @@
 </template>
 
 <script>
-  import validator from '@/utils/validate';
+  import validator from '@/utils/validate.js';
   import {Dic} from '@/utils/auth';
 
   export default {
@@ -268,7 +284,7 @@
       for (let i = 0; i < this.AllDicInfo.length; i++) {
         this.selectDicOptionList.push({
           label: this.AllDicInfo[i].label
-        });
+        })
       }
     },
     methods: {
@@ -278,28 +294,27 @@
         if (this.updateDrawerType === drawerType) {
           this.updateDrawerType = '';
         }
-        let _this = this;
-        setTimeout(function () {
-          _this.drawerFormData = {};
-          _this.updateDrawerType = drawerType;
-          _this.drawerFormData = drawerInitData;
+        setTimeout(() => {
+          this.drawerFormData = {};
+          this.updateDrawerType = drawerType;
+          this.drawerFormData = drawerInitData;
           //处理多重验证
           if (drawerType !== 'pDrawer' && drawerType !== 'selectDrawer') {
             if (drawerInitData.validator !== '') {
-              _this.drawerFormData.validator = drawerInitData.validator.split(",");
+              this.drawerFormData.validator = drawerInitData.validator.split(",");
             }
           }
           if (drawerType !== 'pDrawer') {
             //处理样式
-            _this.drawerFormData.width = parseInt(_this.drawerFormData.width);
-            _this.drawerFormData.height = parseInt(_this.drawerFormData.height);
+            this.drawerFormData.width = parseInt(this.drawerFormData.width);
+            this.drawerFormData.height = parseInt(this.drawerFormData.height);
             //处理数据
-            _this.drawerFormData.model = _this.drawerFormData.model.slice(5);
+            this.drawerFormData.model = this.drawerFormData.model.slice(5);
           }
           //选择框数据导入
           if (drawerType === 'selectDrawer') {
-            _this.selectOptionList = [];
-            _this.selectOptionList = drawerInitData.optionList;
+            this.selectOptionList = [];
+            this.selectOptionList = drawerInitData.optionList;
           }
         }, 100);
       },
@@ -371,4 +386,8 @@
 </script>
 
 <style scoped lang="less">
+  .tips {
+    color: #EA2313;
+    font-weight: bold;
+  }
 </style>
