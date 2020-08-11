@@ -2,7 +2,7 @@
   <header class="header flex-center-align">
     <router-link class="logo flex-center" to="/">
       <h4 class="logo-text">
-        测试功能
+        自定义合同模板编辑器
       </h4>
     </router-link>
     <span class="flex-spacer"></span>
@@ -13,14 +13,6 @@
         <span class="user-name">{{ userName }}</span>
         <i class="user-box-arrow el-icon-arrow-down el-icon--right"></i>
       </div>
-      <el-dropdown-menu>
-        <el-dropdown-item command="logout">
-          退出登录
-        </el-dropdown-item>
-        <el-dropdown-item command="change-password">
-          修改密码
-        </el-dropdown-item>
-      </el-dropdown-menu>
     </el-dropdown>
   </header>
 </template>

@@ -42,14 +42,13 @@
           </template>
         </el-table-column>
       </el-table>
-      <contractEditor-preview ref="contractEditorPreview"></contractEditor-preview>
       <contract-editor-main ref="contractEditorMain" @saveContract="saveContract"></contract-editor-main>
     </div>
   </div>
 </template>
 
 <script>
-  import ContractEditorMain from './model/contractEditor-main';
+  import ContractEditorMain from './dialog/contractEditor-main';
 
   export default {
     components: { ContractEditorMain },
