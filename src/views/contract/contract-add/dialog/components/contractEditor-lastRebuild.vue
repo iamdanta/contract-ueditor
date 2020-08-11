@@ -419,12 +419,12 @@
           cjsj: Date.parse(new Date()),
           zstk: this.rebuildData
         });
-        this.$emit('updateContract', data);
+        this.$emit('update', data);
         this.$message.success('回退至开发状态成功');
         this.mainDialogVisible(false, '直接关闭弹框');
       },
       // 保存
-      async goSaveFb(zt, fn) {
+      goSaveFb(zt, fn) {
         // 先同步最新代码
         this.codeSave();
         let data = {
@@ -436,7 +436,8 @@
           this.$message.success('保存发布模式数据成功');
           fn(data);
         } else {
-          this.$emit('updateContract', data);
+          this.$emit('update', data);
+          console.log(data);
           this.$message.success('保存发布模式数据成功');
           this.mainDialogVisible(false, '直接关闭弹框');
         }

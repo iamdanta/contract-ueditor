@@ -48,16 +48,17 @@
           </template>
         </el-table-column>
       </el-table>
-      <contract-editor-main ref="contractEditorMain" @addContract="addContract" @updateContract="updateContract"></contract-editor-main>
+      <contract-editor-main ref="contractEditorMain" @addContract="addContract"
+                            @updateContract="updateContract"></contract-editor-main>
       <!--查看-->
       <contractEditor-operation ref="contractEditorOperation"></contractEditor-operation>
-      <contract-editor-last-rebuild ref="contractEditorLastRebuild" @updateContract="updateContract" />
+      <contract-editor-last-rebuild ref="contractEditorLastRebuild" @updateContract="updateContract"/>
     </div>
   </div>
 </template>
 
 <script>
-  import ContractEditorLastRebuild from "./dialog/components/contractEditor-lastRebuild";
+  import ContractEditorLastRebuild from './dialog/components/contractEditor-lastRebuild';
   import ContractEditorMain from './dialog/contractEditor-main';
 
   export default {
@@ -132,5 +133,17 @@
     height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #ccc;
+
+    .el-button {
+      margin-left: 30px;
+    }
+  }
+
+  .table {
+    /deep/ td {
+      .el-popover__reference {
+        margin-left: 10px;
+      }
+    }
   }
 </style>
