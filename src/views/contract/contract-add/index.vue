@@ -51,7 +51,7 @@
       <contract-editor-main ref="contractEditorMain" @addContract="addContract" @updateContract="updateContract"></contract-editor-main>
       <!--查看-->
       <contractEditor-operation ref="contractEditorOperation"></contractEditor-operation>
-      <contract-editor-last-rebuild ref="contractEditorLastRebuild" />
+      <contract-editor-last-rebuild ref="contractEditorLastRebuild" @updateContract="updateContract" />
     </div>
   </div>
 </template>
@@ -112,6 +112,8 @@
       },
       //保存更新合同
       updateContract(data) {
+        console.log('保存更新合同');
+        console.log(data);
         if (data) {
           this.tableData.forEach((item, index) => {
             if (item.id === data.id) {

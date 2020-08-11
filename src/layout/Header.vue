@@ -7,13 +7,10 @@
     </router-link>
     <span class="flex-spacer"></span>
     <!-- user box -->
-    <el-dropdown @command="command">
-      <div class="user-box flex-center">
-        <i class="el-icon-user-solid"></i>
-        <span class="user-name">{{ userName }}</span>
-        <i class="user-box-arrow el-icon-arrow-down el-icon--right"></i>
-      </div>
-    </el-dropdown>
+    <div class="user-box flex-center">
+      <i class="el-icon-user-solid"></i>
+      <span class="user-name">created by {{ userName }}</span>
+    </div>
   </header>
 </template>
 
@@ -83,7 +80,7 @@ export default {
   .user-box {
     padding: 4px 8px;
     user-select: none;
-    color: white;
+    color: #000;
     transition: background 0.2s;
 
     &:hover {

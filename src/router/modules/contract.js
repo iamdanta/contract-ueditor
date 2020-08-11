@@ -17,7 +17,7 @@ export default {
   children: [
     {
       path: '/home/contract/contract-add',
-      name: 'contract-edit',
+      name: 'contract-add',
       component: contractAdd,
       meta: {
         label: '合同模板新增'

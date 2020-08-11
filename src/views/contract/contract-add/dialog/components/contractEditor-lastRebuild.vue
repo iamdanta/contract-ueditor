@@ -408,10 +408,18 @@
       },
       // 查询历史记录
       queryHistoryList() {
-        this.historyList = [];
+        if (this.allData.historyList) {
+          this.historyList = this.allData.historyList;
+        }
       },
       // 回退
-      goReturnKf() {
+      goReturnKf(data) {
+        data.historyList.push({
+          id: this.getRandomNum.toString() + this.getRandomNum().toString(),
+          cjsj: Date.parse(new Date()),
+          zstk: this.rebuildData
+        });
+        this.$emit('updateContract', data);
         this.$message.success('回退至开发状态成功');
         this.mainDialogVisible(false, '直接关闭弹框');
       },
@@ -419,8 +427,19 @@
       async goSaveFb(zt, fn) {
         // 先同步最新代码
         this.codeSave();
-        this.$message.success('保存发布模式数据成功');
-        this.mainDialogVisible(false, '直接关闭弹框');
+        let data = {
+          ...this.allData,
+          zstk: this.rebuildData,
+          zt: zt
+        };
+        if (fn) {
+          this.$message.success('保存发布模式数据成功');
+          fn(data);
+        } else {
+          this.$emit('updateContract', data);
+          this.$message.success('保存发布模式数据成功');
+          this.mainDialogVisible(false, '直接关闭弹框');
+        }
       },
       timestampToTime(timestamp) {
         let strDate;
@@ -433,7 +452,17 @@
         let s = (date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds());
         strDate = Y + M + D + h + m + s;
         return strDate;
-      }
+      },
+      //通用 取6位随机数
+      getRandomNum() {
+        let random = Math.floor(Math.random() * 1000000);
+        //强制获取6位数
+        if (random < 100000 || random >= 1000000) {
+          this.getRandomNum();
+        } else {
+          return random;
+        }
+      },
     }
   }
 </script>
