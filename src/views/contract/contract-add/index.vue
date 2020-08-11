@@ -1,7 +1,7 @@
 <template>
   <div class="full flex flex-column">
     <div class="search">
-      <el-button @click="addContract" type="primary" size="small">新增合同模板</el-button>
+      <el-button @click="openAddContract" type="primary" size="small">新增合同模板</el-button>
     </div>
     <div class="table flex-1">
       <el-table :data="tableData" style="width: 100%">
@@ -11,6 +11,12 @@
         <el-table-column prop="createTime" label="合同创建时间">
         </el-table-column>
         <el-table-column prop="createPeople" label="合同创建者">
+        </el-table-column>
+        <el-table-column prop="zt" label="状态">
+          <template slot-scope="scope">
+            <p v-if="scope.row.zt === 'kf'" style="color: red">开发</p>
+            <p v-if="scope.row.zt === 'fb'" style="color: red">发布</p>
+          </template>
         </el-table-column>
         <el-table-column label="操作">
           <template slot-scope="{ row }">
@@ -42,16 +48,20 @@
           </template>
         </el-table-column>
       </el-table>
-      <contract-editor-main ref="contractEditorMain" @saveContract="saveContract"></contract-editor-main>
+      <contract-editor-main ref="contractEditorMain" @addContract="addContract" @updateContract="updateContract"></contract-editor-main>
+      <!--查看-->
+      <contractEditor-operation ref="contractEditorOperation"></contractEditor-operation>
+      <contract-editor-last-rebuild ref="contractEditorLastRebuild" />
     </div>
   </div>
 </template>
 
 <script>
+  import ContractEditorLastRebuild from "./dialog/components/contractEditor-lastRebuild";
   import ContractEditorMain from './dialog/contractEditor-main';
 
   export default {
-    components: { ContractEditorMain },
+    components: { ContractEditorMain, ContractEditorLastRebuild },
     data() {
       return {
         popoverVisible: false,
@@ -63,20 +73,28 @@
             createTime: '2019.11.15',
             createPeople: 'wupeng',
             tk: `<h2>123</h2>`,
-            zstk: `<h2>123</h2>`
+            zstk: ``,
+            zt: 'kf'
           }
         ]
       };
     },
     methods: {
-      addContract() {
+      openAddContract() {
         this.$refs.contractEditorMain.mainDialogVisible(true);
       },
       viewContract(row) {
-        this.$refs.contractEditorPreview.initContractPreviewDialog(true, { tk: row.tk }, 'contractView');
+        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: row }, 'contractView');
       },
       editContract(row) {
-        this.$refs.contractEditorMain.mainDialogVisible(true, row);
+        switch (row.zt) {
+          case 'kf':
+            this.$refs.contractEditorMain.mainDialogVisible(true, row);
+            break;
+          case 'fb':
+            this.$refs.contractEditorLastRebuild.mainDialogVisible(true, row);
+            break;
+        }
       },
       deleteContract(index, row) {
         if (index === 0) {
@@ -86,15 +104,21 @@
           this.$message.warning(`删除合同模板 ${row.mbmc} 成功`);
         }
       },
-      //保存编辑器给的数据
-      saveContract(data, doWhat) {
+      //新增合同
+      addContract(data) {
         if (data) {
-          if (doWhat === 'add') {
-            data.id = this.tableData.length + 1;
-            this.tableData.push(data);
-          } else if (doWhat === 'update') {
-            this.tableData[data.id - 1] = data;
-          }
+          this.tableData.push(data);
+        }
+      },
+      //保存更新合同
+      updateContract(data) {
+        if (data) {
+          this.tableData.forEach((item, index) => {
+            if (item.id === data.id) {
+              this.tableData.splice(index, 1);
+              this.tableData.splice(index, 0, data);
+            }
+          });
         }
       }
     }

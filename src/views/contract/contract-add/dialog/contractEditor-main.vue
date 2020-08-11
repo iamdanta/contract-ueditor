@@ -1,7 +1,8 @@
 <template>
   <el-dialog :title="editorDialogTitle" :visible.sync="editorDialogVisible" :show-close="false"
              :close-on-press-escape="false"
-             :close-on-click-modal="false" :fullscreen="true" destroy-on-close class="contract-editor-main-dialog full-height">
+             :close-on-click-modal="false" :fullscreen="true" destroy-on-close
+             class="contract-editor-main-dialog full-height">
     <div class="main-editor-body full-height" v-loading.fullscreen.lock="loading"
          element-loading-text="拼命加载中"
          element-loading-spinner="el-icon-loading"
@@ -73,16 +74,20 @@
         <el-button v-if="!isEditContract" type="primary" size="small" @click="goAddContract()"
                    icon="el-icon-document-add">保存开发
         </el-button>
-        <el-button v-if="!isEditContract" type="primary" size="small" @click="goAddContract(yh)" icon="el-icon-magic-stick">保存并进行发布优化</el-button>
+        <el-button v-if="!isEditContract" type="primary" size="small" @click="goAddContract(yh)"
+                   icon="el-icon-magic-stick">保存并进行发布优化
+        </el-button>
         <el-button v-if="isEditContract" type="primary" size="small" @click="goSaveUpdateContract()"
                    icon="el-icon-document-add">保存开发
         </el-button>
-        <el-button v-if="isEditContract" type="primary" size="small" @click="goSaveUpdateContract(yh)" icon="el-icon-magic-stick">保存并进行发布优化</el-button>
+        <el-button v-if="isEditContract" type="primary" size="small" @click="goSaveUpdateContract(yh)"
+                   icon="el-icon-magic-stick">保存并进行发布优化
+        </el-button>
         <el-button size="small" @click="mainDialogVisible(false)" icon="el-icon-close">退 出
         </el-button>
       </el-form>
       <contract-editor-last-rebuild ref="contractEditorLastRebuild"/>
-      <contract-editor-help-step ref="contractEditorHelpStep" />
+      <contract-editor-help-step ref="contractEditorHelpStep"/>
     </div>
   </el-dialog>
 </template>
@@ -101,17 +106,17 @@
   import CONFIG from '@/config/config';
   import validator from '@/utils/validate';
   //-----------------vue 和 UEditor的集合体
-  import VueUeditorWrap from 'vue-ueditor-wrap'
+  import VueUeditorWrap from 'vue-ueditor-wrap';
   //-----------------
   import contractEditorLeftBar from './components/contractEditor-leftBar';
   import contractEditorRightBar from './components/contractEditor-rightBar';
-  import ContractEditorHelp from "./components/contractEditor-help";
-  import ContractEditorUpdateWork from "./components/contractEditor-update-work";
-  import ContractEditorLastRebuild from "./components/contractEditor-lastRebuild";
-  import ContractEditorHelpStep from "./components/contractEditor-help-step";
+  import ContractEditorHelp from './components/contractEditor-help';
+  import ContractEditorUpdateWork from './components/contractEditor-update-work';
+  import ContractEditorLastRebuild from './components/contractEditor-lastRebuild';
+  import ContractEditorHelpStep from './components/contractEditor-help-step';
 
   export default {
-    name: "contractEditor-main",
+    name: 'contractEditor-main',
     props: {},
     data() {
       return {
@@ -146,7 +151,7 @@
         UEditorBaseCodeData: ``,
         //编辑器额外组件按钮
         UEditorOtherComponents: []
-      }
+      };
     },
     components: {
       ContractEditorLastRebuild,
@@ -246,7 +251,7 @@
               ? labelList[i].match(this.nameAndIdRegExp)
               : [];
           let newIdList = nameIdList.map((value) => value.replace(/"/g, ''));
-          anchorList.push({id: newIdList[0], name: newIdList[1]});
+          anchorList.push({ id: newIdList[0], name: newIdList[1] });
         }
         //处理左侧锚点，获得处理过后的name,id
         if (anchorList.length !== 0) {
@@ -545,10 +550,10 @@
             var state = editor.queryCommandState(uiName);
             if (state === -1) {
               btn.setDisabled(true);
-              btn.setChecked(false)
+              btn.setChecked(false);
             } else {
               btn.setDisabled(false);
-              btn.setChecked(state)
+              btn.setChecked(state);
             }
           });
           // 因为你是添加 button，所以需要返回这个 button
@@ -577,7 +582,7 @@
         this.frame.document.styleSheets[0].insertRule('body::-webkit-scrollbar { scrollbar-width: none }', 0);
         this.frame.document.styleSheets[0].insertRule('body::-webkit-scrollbar { -ms-overflow-style: none }', 0);
         //双击触发修改事件
-        this.frame.addEventListener("dblclick", (eObj) => {
+        this.frame.addEventListener('dblclick', (eObj) => {
           //获取选定的dom
           let node = eObj.srcElement || eObj.target;
           let nodeDom = this.frame.document.getElementById(node.id);
@@ -645,7 +650,7 @@
               } else if (parent.nodeName.toLowerCase() === 'html') {
                 return false;
               } else if (parent.nodeName.toLowerCase() === 'p') {
-                return parent
+                return parent;
               } else if (parent.nodeName.toLowerCase() !== 'p') {
                 getParent(parent);
               } else {
@@ -690,11 +695,11 @@
       //------------------------------------
       //控制左侧抽屉展示外部方法
       showLeftDrawer(visible) {
-        this.leftBarDrawerShow = visible
+        this.leftBarDrawerShow = visible;
       },
       //控制右侧抽屉展示外部方法
       showUpdateDrawer(visible) {
-        this.rightBarDrawerShow = visible
+        this.rightBarDrawerShow = visible;
       },
       //------------------------------------
       //打开双击修改的抽屉
@@ -765,7 +770,7 @@
                 let modelValue = '';
                 let randomModel = '';
                 if (dataObj.updateData[key] !== '') {
-                  modelValue = dataObj.updateData[key]
+                  modelValue = dataObj.updateData[key];
                 } else {
                   randomModel = this.getRandomNum();
                   if (randomModel) {
@@ -822,6 +827,25 @@
           if (valid) {
             this.loading = true;
             //
+            let data = {
+              id: this.getNewId(),
+              mbmc: this.contractModelData.modelName,
+              mblx: this.contractModelData.modelType,
+              createTime: this.getNowTime(),
+              createPeople: 'wupeng',
+              tk: this.UEditorBaseCodeData.replace(/[\r\n]/g, ''),
+              zstk: ``,
+              zt: 'kf'
+            };
+            this.$emit('addContract', data);
+            this.$message.success('新增并上传合同模板成功！');
+            this.loading = false;
+            this.mainDialogVisible(false, '关闭弹框');
+            setTimeout(() => {
+              if (fn) {
+                fn(data);
+              }
+            }, 200);
           } else {
             this.$message.warning('请输入合同模板基本信息！');
           }
@@ -837,6 +861,25 @@
           if (valid) {
             this.loading = true;
             //
+            let data = {
+              id: this.contractModelData.id,
+              mbmc: this.contractModelData.modelName,
+              mblx: this.contractModelData.modelType,
+              createTime: this.getNowTime(),
+              createPeople: 'wupeng',
+              tk: this.UEditorBaseCodeData.replace(/[\r\n]/g, ''),
+              zstk: ``,
+              zt: 'kf'
+            };
+            this.$emit('updateContract', data);
+            this.$message.success('保存更新当前数据成功！');
+            this.loading = false;
+            this.mainDialogVisible(false, '关闭弹框');
+            setTimeout(() => {
+              if (fn) {
+                fn(data);
+              }
+            }, 1000);
           }
         });
       },
@@ -860,9 +903,22 @@
         } else {
           return random;
         }
+      },
+      getNowTime() {
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = (date.getMonth() + 1).toString().padStart(2, '0');
+        let day = date.getDate().toString().padStart(2, '0');
+        let hours = date.getHours().toString().padStart(2, '0');
+        let minutes = date.getMinutes().toString().padStart(2, '0');
+        let seconds = date.getSeconds().toString().padStart(2, '0');
+        return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+      },
+      getNewId() {
+        return this.getRandomNum().toString() + this.getRandomNum().toString();
       }
     }
-  }
+  };
 </script>
 
 <style lang="scss" scoped>
