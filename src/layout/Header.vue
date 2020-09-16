@@ -9,46 +9,19 @@
     <!-- user box -->
     <div class="user-box flex-center">
       <i class="el-icon-user-solid"></i>
-      <span class="user-name">created by {{ userName }}</span>
+      <span class="user-name">wupeng</span>
     </div>
   </header>
 </template>
 
 <script>
-import { userAuth } from '@/utils/auth';
 
 export default {
   data() {
-    return {
-      userName: ''
-    };
+    return {};
   },
-  methods: {
-    command(type) {
-      switch (type) {
-        case 'logout':
-          this.logout();
-          break;
-        case 'change-password':
-          this.changePassword();
-          break;
-        default:
-      }
-    },
-    logout() {
-      userAuth.clear();
-      this.$router.push('/login');
-    },
-    changePassword() {
-      this.$router.push('/change-password');
-    }
-  },
-  mounted() {
-    const data = userAuth.getToken();
-    if (data) {
-      this.userName = data.userName;
-    }
-  }
+  methods: {},
+  mounted() {}
 };
 </script>
 

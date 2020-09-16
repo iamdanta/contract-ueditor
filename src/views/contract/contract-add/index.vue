@@ -60,22 +60,24 @@
 <script>
   import ContractEditorLastRebuild from './dialog/components/contractEditor-lastRebuild';
   import ContractEditorMain from './dialog/contractEditor-main';
+  import {tk, zstk} from './model/model';
 
   export default {
     components: { ContractEditorMain, ContractEditorLastRebuild },
     data() {
       return {
         popoverVisible: false,
+        txt: zstk,
         tableData: [
           {
             id: 1,
-            mbmc: '测试模板1',
-            mblx: '测试模板类型',
-            createTime: '2019.11.15',
+            mbmc: '演示模板',
+            mblx: '演示模板类型',
+            createTime: '2020/09/16',
             createPeople: 'wupeng',
-            tk: `<h2>123</h2>`,
-            zstk: ``,
-            zt: 'kf'
+            tk: JSON.parse(JSON.stringify(tk)),
+            zstk: JSON.parse(JSON.stringify(zstk)),
+            zt: 'fb'
           }
         ]
       };

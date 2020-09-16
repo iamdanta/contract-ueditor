@@ -1,9 +1,17 @@
 <template>
   <div class="contract-editor-help scrollbar-default">
     <p class="title"><i class="el-icon-info"></i>自定义合同模板编辑器-更新日志</p>
-    <p>当前版本：V0.2.4版本</p>
+    <p>当前版本：V0.2.5版本</p>
     <p>更新日志：</p>
     <ul>
+      <li>
+        <p>2020.09.16 V0.2.5版本 wupeng</p>
+        <ol>
+          <li>提取编辑器为独立</li>
+          <li>删除无用业务组件</li>
+          <li>加入部分需求功能</li>
+        </ol>
+      </li>
       <li>
         <p>2020.07.31 V0.2.4版本 wupeng</p>
         <ol>
@@ -76,11 +84,23 @@
       }
     }
 
-    li {
-      font-weight: 400;
-      color: #333333;
-      line-height: 20px;
-      margin: 20px 20px;
+    ul {
+      margin: 30px 20px;
+      li {
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+        margin: 10px 0;
+        ol {
+          li {
+            margin: 20px;
+          }
+        }
+
+        p {
+          font-weight: bold;
+        }
+      }
     }
   }
 </style>
