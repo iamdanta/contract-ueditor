@@ -2,6 +2,7 @@
   <div class="full flex flex-column">
     <div class="search">
       <el-button @click="openAddContract" type="primary" size="small">新增合同模板</el-button>
+      <el-button @click="reUseData" type="primary" size="small">共享数据给使用</el-button>
     </div>
     <div class="table flex-1">
       <el-table :data="tableData" style="width: 100%">
@@ -125,6 +126,11 @@
             }
           });
         }
+      },
+      //共享数据
+      reUseData() {
+        this.$store.dispatch('contract/setContractData', this.tableData);
+        this.$message.success('同步到vuex数据成功！');
       }
     }
   };
