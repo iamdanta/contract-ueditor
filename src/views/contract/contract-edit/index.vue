@@ -2,7 +2,7 @@
   <div class="full flex flex-column">
     <div class="use-step-body">
       <div class="step-body">
-        <p class="step-text">步骤一：请选择一个合同模板</p>
+        <p class="step-text">步骤一：请选择一个合同模板（如果没数据请前往新增点击同步）</p>
         <el-select v-model="contractSelectData" placeholder="请选择一个合同模板" size="small">
           <el-option v-for="(item, i) in tableData" :key="i" :value="item"
                      :label="item.mbmc + ' ' + item.createTime"></el-option>
@@ -10,7 +10,7 @@
       </div>
       <div class="step-body">
         <p class="step-text">步骤二：你可以查看该模板</p>
-        <el-button @click="viewContract" size="small" type="primary" :disabled="!contractSelectData">查看合同模板</el-button>
+        <el-button @click="viewContract" size="small" type="primary" :disabled="!contractSelectData">查看发布状态合同模板</el-button>
         <!--查看-->
         <contractEditor-operation ref="contractEditorOperation"></contractEditor-operation>
       </div>
@@ -63,7 +63,7 @@
     },
     methods: {
       viewContract(row) {
-        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: row }, 'contractView');
+        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: row }, 'view');
       },
       saveData() {
         this.$refs.ruleForm.validate((valid) => {

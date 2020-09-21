@@ -19,14 +19,22 @@
             <p v-if="scope.row.zt === 'fb'" style="color: red">发布</p>
           </template>
         </el-table-column>
-        <el-table-column label="操作">
+        <el-table-column label="操作" width="350px">
           <template slot-scope="{ row }">
             <el-button
               @click.native.prevent="viewContract(row)"
               type="text"
               size="small"
             >
-              查看
+              查看开发状态模板
+            </el-button>
+            <el-button
+              @click.native.prevent="viewFbContract(row)"
+              type="text"
+              size="small"
+              v-if="row.zt === 'fb'"
+            >
+              查看发布状态模板
             </el-button>
             <el-button
               @click.native.prevent="editContract(row)"
@@ -89,6 +97,9 @@
       },
       viewContract(row) {
         this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: row }, 'contractView');
+      },
+      viewFbContract(row) {
+        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: row }, 'view');
       },
       editContract(row) {
         switch (row.zt) {

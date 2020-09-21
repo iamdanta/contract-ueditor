@@ -1,4 +1,4 @@
-export const tk = '';
+export const tk = '<p>我是条款，测试数据，没弄那么多</p>';
 export const zstk = `
 <template>
 <div class="contract-model-view" :style="viewStyle">

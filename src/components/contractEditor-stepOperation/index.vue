@@ -168,13 +168,13 @@
         if (zstk) {
           if (zstk.includes('template')) {
             //处理分期
-            zstk = this.convertJjfs(zstk, this.jjfsRegExp, baseData);
-            zstk = this.convertFqxx(zstk, this.fqxxRegExp, baseData);
+            // zstk = this.convertJjfs(zstk, this.jjfsRegExp, baseData);
+            // zstk = this.convertFqxx(zstk, this.fqxxRegExp, baseData);
             //买受人
-            zstk = this.convertMsr(zstk, this.msrRegExp, baseData.buyerList);
+            // zstk = this.convertMsr(zstk, this.msrRegExp, baseData.buyerList);
             //商品房 存量房 出卖人
-            zstk = this.convertCmr(zstk, this.spfCmrRegExp, baseData.sellerList);
-            zstk = this.convertCmr(zstk, this.clfCmrRegExp, baseData.sellerList);
+            // zstk = this.convertCmr(zstk, this.spfCmrRegExp, baseData.sellerList);
+            // zstk = this.convertCmr(zstk, this.clfCmrRegExp, baseData.sellerList);
             //获取锚点
             this.getAnchorList(zstk);
             this.componentCode = Vue.extend(this.getCode(zstk));

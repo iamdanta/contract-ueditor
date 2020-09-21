@@ -13,7 +13,7 @@
     <div class="backBtn">
       <el-button
         class="editReBack"
-        size="medium"
+        size="small"
         @click="initContractDialog(false, {}, 'close')"
         icon="el-icon-close"
       >关 闭</el-button>
