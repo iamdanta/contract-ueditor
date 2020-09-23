@@ -1,8 +1,8 @@
 <template>
   <el-dialog :title="editorDialogTitle" :visible.sync="editorDialogVisible" :show-close="false"
              :close-on-press-escape="false"
-             :close-on-click-modal="false" :fullscreen="true" destroy-on-close
-             class="contract-editor-main-dialog full-height">
+             :close-on-click-modal="false" :fullscreen="true"
+             class="contract-editor-main-dialog full-height" v-if="showDialog">
     <div class="main-editor-body full-height" v-loading.fullscreen.lock="loading"
          element-loading-text="拼命加载中"
          element-loading-spinner="el-icon-loading"
@@ -120,6 +120,9 @@
     props: {},
     data() {
       return {
+        //管理渲染弹窗内部
+        showDialog: false,
+        //----------------------------
         UEditorConfig: {},
         loading: false, //加载状态
         isEditContract: false, //是否是编辑状态
@@ -163,6 +166,7 @@
       contractEditorRightBar
     },
     created() {
+      this.showDialog = false;
       //UEditor初始配置
       this.UEditorConfig = window.UEditorMainConfig;
       if (process.env.NODE_ENV === 'development') {
@@ -201,6 +205,8 @@
           this.isEditContract = false;
           //弹框显示
           this.editorDialogVisible = visible;
+          //弹框渲染
+          this.showDialog = false;
           this.$emit('getList');
         };
         if (!visible) {
@@ -218,6 +224,8 @@
           }
         } else {
           this.editorDialogVisible = visible;
+          //弹框渲染
+          this.showDialog = true;
           this.UEditorBaseCodeData = '';
           this.contractModelData = {};
           this.contractModelSaved = false;
@@ -916,7 +924,7 @@
         return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
       },
       getNewId() {
-        return this.getRandomNum().toString() + this.getRandomNum().toString();
+        return new Date().getTime();
       }
     }
   };

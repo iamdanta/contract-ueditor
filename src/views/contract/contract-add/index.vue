@@ -61,7 +61,7 @@
                             @updateContract="updateContract"></contract-editor-main>
       <!--查看-->
       <contractEditor-operation ref="contractEditorOperation"></contractEditor-operation>
-      <contract-editor-last-rebuild ref="contractEditorLastRebuild" @updateContract="updateContract"/>
+      <contract-editor-last-rebuild ref="contractEditorLastRebuild" @updateContract="updateContract" />
     </div>
   </div>
 </template>

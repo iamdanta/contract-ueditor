@@ -424,7 +424,7 @@
           cjsj: Date.parse(new Date()),
           zstk: this.rebuildData
         });
-        this.$emit('update', data);
+        this.$parent.$parent.$parent.updateContract(data);
         this.$message.success('回退至开发状态成功');
         this.mainDialogVisible(false, '直接关闭弹框');
       },
@@ -441,7 +441,7 @@
           this.$message.success('保存发布模式数据成功');
           fn(data);
         } else {
-          this.$emit('update', data);
+          this.$parent.$parent.$parent.updateContract(data);
           console.log(data);
           this.$message.success('保存发布模式数据成功');
           this.mainDialogVisible(false, '直接关闭弹框');
