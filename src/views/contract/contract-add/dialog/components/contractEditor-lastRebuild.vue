@@ -268,13 +268,8 @@
                                   return {
                                     // 控件输入绑定 禁止删除
                                     form: {
-                                      contract: {},
-                                      housingtranContract: {},
-                                      housingtranHouse: {},
-                                      housingtranObligeeList: {},
-                                      installmentinfoList: {},
-                                      projectManagerInfo: {},
-                                      surveyBuildingBo: {}
+                                      //默认绑定值对象，请根据实际需求追加
+                                      contract: {}
                                     },
                                     // 框内样式插入
                                     viewStyle: {
@@ -305,11 +300,21 @@
                                               if (this.allBaseData[objValueList[0]]) {
                                                 // 仅限有值的情况才允许插入避免报错
                                                 if (this.allBaseData[objValueList[0]][objValueList[1]]) {
-                                                  this.$set(
-                                                    this.form,
-                                                    [bindValueList[0]],
-                                                    this.allBaseData[objValueList[0]][objValueList[1]]
-                                                  );
+                                                 //如果是深层级
+                                                  if (bindValueList.length > 1) {
+                                                    this.$set(
+                                                      this.form[bindValueList[0]],
+                                                      [bindValueList[1]],
+                                                      this.allBaseData[objValueList[0]][objValueList[1]]
+                                                    );
+                                                  } else {
+                                                    //单层级（随机值）
+                                                     this.$set(
+                                                      this.form,
+                                                      [bindValueList[0]],
+                                                      this.allBaseData[objValueList[0]][objValueList[1]]
+                                                     );
+                                                  }
                                                 }
                                               }
                                             }

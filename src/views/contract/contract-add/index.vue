@@ -70,6 +70,7 @@
   import ContractEditorLastRebuild from './dialog/components/contractEditor-lastRebuild';
   import ContractEditorMain from './dialog/contractEditor-main';
   import {tk, zstk} from './model/model';
+  import {tk1, zstk1} from './model/model1';
 
   export default {
     components: { ContractEditorMain, ContractEditorLastRebuild },
@@ -86,6 +87,16 @@
             createPeople: 'wupeng',
             tk: JSON.parse(JSON.stringify(tk)),
             zstk: JSON.parse(JSON.stringify(zstk)),
+            zt: 'fb'
+          },
+          {
+            id: 2,
+            mbmc: '测试模板',
+            mblx: '测试模板类型',
+            createTime: '2020/09/23',
+            createPeople: 'wupeng',
+            tk: JSON.parse(JSON.stringify(tk1)),
+            zstk: JSON.parse(JSON.stringify(zstk1)),
             zt: 'fb'
           }
         ]
@@ -114,6 +125,8 @@
       deleteContract(index, row) {
         if (index === 0) {
           this.$message.warning('您不能删除第一条数据！');
+        } else if (index === 1) {
+          this.$message.warning('您不能删除第二条数据！');
         } else {
           this.tableData.splice(index, 1);
           this.$message.warning(`删除合同模板 ${row.mbmc} 成功`);

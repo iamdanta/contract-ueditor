@@ -1482,6 +1482,74 @@
       "id": "dac68dd200cb44cf8613df0e49d2eb22",
       "childrens": [
         {
+          "id": "4508c456003e45d0a8655153d80398ed",
+          "childrens": [
+            {
+              "id": "e4c4bbb7afec40a48fbda0818f5f5aff",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "contractData.jfName",
+              "label": "甲方姓名",
+              "type": "测试绑定取值：甲方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2d44d3dfaeb54f44a5cd79676e6aa656",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "contractData.jfType",
+              "label": "甲方类别",
+              "type": "测试绑定取值：甲方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "msrList",
+          "label": "测试绑定取值：甲方",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5a4263370e374de6aa324b08c31c7dcf",
+          "childrens": [
+            {
+              "id": "e8708a68d10448fd918eab31390763f3",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "contractData.yfName",
+              "label": "乙方姓名",
+              "type": "测试绑定取值：乙方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b2226581432848838344e4b6a9e86d87",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "contractData.yfType",
+              "label": "乙方类别",
+              "type": "测试绑定取值：乙方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "cmrList",
+          "label": "测试绑定取值：乙方",
+          "type": "合同模板取值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
           "id": "3ce534dbf4a7462ea324c7462fa8a659",
           "childrens": [
             {
@@ -1818,6 +1886,74 @@
       "id": "3794ca37a0fe43af9c0921de343e516f",
       "childrens": [
         {
+          "id": "4508c456003e45d0a8655153d80398ed",
+          "childrens": [
+            {
+              "id": "e4c4bbb7afec40a48fbda0818f5f5aff",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "contract.jfName",
+              "label": "甲方姓名",
+              "type": "测试绑定存值：甲方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "2d44d3dfaeb54f44a5cd79676e6aa656",
+              "childrens": null,
+              "pid": "4508c456003e45d0a8655153d80398ed",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
+              "value": "contract.jfType",
+              "label": "甲方类别",
+              "type": "测试绑定存值：甲方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "msrList",
+          "label": "测试绑定存值：甲方",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
+          "id": "5a4263370e374de6aa324b08c31c7dcf",
+          "childrens": [
+            {
+              "id": "e8708a68d10448fd918eab31390763f3",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "contract.yfName",
+              "label": "乙方姓名",
+              "type": "测试绑定存值：乙方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            },
+            {
+              "id": "b2226581432848838344e4b6a9e86d87",
+              "childrens": null,
+              "pid": "5a4263370e374de6aa324b08c31c7dcf",
+              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
+              "value": "contract.yfType",
+              "label": "乙方类别",
+              "type": "测试绑定存值：乙方",
+              "description": null,
+              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+            }
+          ],
+          "pid": "3794ca37a0fe43af9c0921de343e516f",
+          "pids": "3794ca37a0fe43af9c0921de343e516f,",
+          "value": "cmrList",
+          "label": "测试绑定存值：乙方",
+          "type": "合同模板存值",
+          "description": null,
+          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
+        },
+        {
           "id": "c74030eef3d24730aea238fd43a2081e",
           "childrens": null,
           "pid": "3794ca37a0fe43af9c0921de343e516f",
@@ -1912,239 +2048,6 @@
           "pids": "3794ca37a0fe43af9c0921de343e516f,",
           "value": "contract.fksj",
           "label": "付款时间",
-          "type": "合同模板存值",
-          "description": null,
-          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-        },
-        {
-          "id": "4508c456003e45d0a8655153d80398ed",
-          "childrens": [
-            {
-              "id": "e519c17812bf4e2e888682d84c40b3fd",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.qlrmc",
-              "label": "姓名",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "e4ae1ca8b88f4cd3a5933b5664ec22f3",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.zjzl",
-              "label": "证件种类",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "6ec4af0cf6864f6c934ccac75b80439e",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.zjh",
-              "label": "证件号",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "02bdcc9bd7004e6eae7b667f69e18f41",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.yb",
-              "label": "邮编",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "81b25a5d9e3d4dccbafb862ee948cd2f",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.dz",
-              "label": "通讯地址",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "b97ef748cb3c42d59f72571095d4441a",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.dlrmc",
-              "label": "代理人名称",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "0b8e7d28c3e74f85aa5989b63adefb1c",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.dlrzjzl",
-              "label": "代理人证件种类",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "e4c4bbb7afec40a48fbda0818f5f5aff",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.dlrzjh",
-              "label": "代理人证件号",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "2d44d3dfaeb54f44a5cd79676e6aa656",
-              "childrens": null,
-              "pid": "4508c456003e45d0a8655153d80398ed",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,4508c456003e45d0a8655153d80398ed,",
-              "value": "msrList.dlrdh",
-              "label": "代理人电话",
-              "type": "买受人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            }
-          ],
-          "pid": "3794ca37a0fe43af9c0921de343e516f",
-          "pids": "3794ca37a0fe43af9c0921de343e516f,",
-          "value": "msrList",
-          "label": "买受人",
-          "type": "合同模板存值",
-          "description": null,
-          "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-        },
-        {
-          "id": "5a4263370e374de6aa324b08c31c7dcf",
-          "childrens": [
-            {
-              "id": "e4ae3478500148b2b17139bd2cc4bb95",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.qlrmc",
-              "label": "姓名/名称",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "56dbcca797a446d9bd2b3322dd0e159a",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.zjzl",
-              "label": "证件种类",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "07bca093f4f44f2abf2dd57221494c72",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.zjh",
-              "label": "证件号",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "0bb4fc24dd36425a8816f40d801dd1cc",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.frmc",
-              "label": "法人姓名",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "b1787823f4ab4e969a0ddd48ec5680af",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.dz",
-              "label": "通讯地址",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "574bcbe9812b44e9bc2153a6411d0d00",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.yb",
-              "label": "邮编",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "a3343380fb9442509f7888671d537582",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.dlrmc",
-              "label": "代理人名称",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "10108377f2c34d0aa614bee3544a5895",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.dlrzjzl",
-              "label": "代理人证件种类",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "e8708a68d10448fd918eab31390763f3",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.dlrzjh",
-              "label": "代理人证件号",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            },
-            {
-              "id": "b2226581432848838344e4b6a9e86d87",
-              "childrens": null,
-              "pid": "5a4263370e374de6aa324b08c31c7dcf",
-              "pids": "3794ca37a0fe43af9c0921de343e516f,5a4263370e374de6aa324b08c31c7dcf,",
-              "value": "cmrList.dlrdh",
-              "label": "代理人电话",
-              "type": "出卖人",
-              "description": null,
-              "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"
-            }
-          ],
-          "pid": "3794ca37a0fe43af9c0921de343e516f",
-          "pids": "3794ca37a0fe43af9c0921de343e516f,",
-          "value": "cmrList",
-          "label": "出卖人",
           "type": "合同模板存值",
           "description": null,
           "appId": "6b1cc80c171a4c8ba9e6f2ce011de2a6"

@@ -21,6 +21,7 @@
     <contractEditor-stepOperation
       v-if="show"
       :data="allBaseData"
+      @saveEditData="saveEditData"
     >
       <slot></slot>
     </contractEditor-stepOperation>
@@ -74,6 +75,9 @@
           this.allBaseData.doWhat = doWhat;
           this.show = true;
         }
+      },
+      saveEditData(data) {
+        this.$emit('saveEditData', data);
       }
     }
   };
