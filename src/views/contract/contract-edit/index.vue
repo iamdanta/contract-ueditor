@@ -4,7 +4,7 @@
       <div class="step-body">
         <p class="step-text">步骤一：请选择一个合同模板（如果没数据请前往新增点击同步）</p>
         <el-select v-model="contractSelectData" placeholder="请选择一个合同模板" size="small">
-          <el-option v-for="(item, i) in tableData" :key="i" :value="item"
+          <el-option v-for="(item, i) in tableData" :key="i" :value="item.mbmc"
                      :label="item.mbmc + ' ' + item.createTime"></el-option>
         </el-select>
       </div>
@@ -78,9 +78,14 @@
       this.form = {};
       this.showEdit = false;
     },
+    computed: {
+      currentSelectData() {
+        return this.tableData.find(item => item.mbmc === this.contractSelectData) ? this.tableData.find(item => item.mbmc === this.contractSelectData) : '';
+      }
+    },
     methods: {
       viewContract() {
-        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: this.contractSelectData }, 'view');
+        this.$refs.contractEditorOperation.initContractDialog(true, { contractTermsBo: this.currentSelectData }, 'view');
       },
       saveData() {
         this.$refs.ruleForm.validate((valid) => {
@@ -92,7 +97,7 @@
       },
       goEdit() {
         this.$refs.contractEditorOperation.initContractDialog(true, {
-          contractTermsBo: this.contractSelectData,
+          contractTermsBo: this.currentSelectData,
           contractData: this.form
         }, 'edit');
       },

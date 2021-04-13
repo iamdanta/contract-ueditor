@@ -81,7 +81,7 @@
         tableData: [
           {
             id: 1,
-            mbmc: '演示模板',
+            mbmc: '演示模板1',
             mblx: '演示模板类型',
             createTime: '2020/09/16',
             createPeople: 'wupeng',
@@ -91,7 +91,7 @@
           },
           {
             id: 2,
-            mbmc: '测试模板',
+            mbmc: '测试模板2',
             mblx: '测试模板类型',
             createTime: '2020/09/23',
             createPeople: 'wupeng',

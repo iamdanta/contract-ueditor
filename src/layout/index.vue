@@ -17,7 +17,7 @@
 
 <script>
 import Header from './Header.vue';
-import Navbar from './Navbar.vue';
+import Navbar from './navbar.vue';
 import HistoryRecord from './HistoryRecord.vue';
 
 export default {
